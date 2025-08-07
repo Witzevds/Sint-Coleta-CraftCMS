@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en
+name: 'Sint Coleta'
+primary: true
+siteGroup: 73c11b7a-b599-43c3-915f-d33cc7a9a076 # Sint Coleta
+sortOrder: 1

@@ -1,0 +1,22 @@
+dateModified: 1754584615
+email:
+  fromEmail: witzevds@gmail.com
+  fromName: 'Sint Coleta'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    7a19be51-2e75-477b-b593-bfdf3fd6de08: 'Sint Coleta' # Sint Coleta
+    73c11b7a-b599-43c3-915f-d33cc7a9a076: 'Sint Coleta' # Sint Coleta
+system:
+  edition: solo
+  live: true
+  name: 'Sint Coleta'
+  schemaVersion: 5.8.0.3
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true
