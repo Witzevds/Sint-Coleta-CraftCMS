@@ -1,0 +1,51 @@
+defaultPlacement: end
+fieldLayouts:
+  68c3c355-373b-48b6-b90c-9d74337a8d2b:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-08T18:41:05+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 7ddd5bab-a50d-4bad-b8b4-60d6a51c84ef
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1f14d299-cff0-4867-b1c9-9c816cace9d4
+        userCondition: null
+handle: publicatieTypes
+name: 'Publicatie Types'
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: ddbe5e0d-1e4d-43a0-9cbb-7b28959a9fd0

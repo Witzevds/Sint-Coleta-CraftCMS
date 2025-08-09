@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: e99a190b-5f45-4ee8-b9be-20345de29949 # Vacature
+handle: vacatures
+maxAuthors: 1
+name: Vacatures
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    enabledByDefault: true
+    hasUrls: true
+    template: vacatures/_entry.twig
+    uriFormat: 'vacatures/{slug}'
+type: channel

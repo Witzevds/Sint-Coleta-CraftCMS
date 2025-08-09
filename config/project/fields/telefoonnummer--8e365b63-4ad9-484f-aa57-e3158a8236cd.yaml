@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: telefoonnummer
+instructions: 'Geef een direct werknummer in. Gebruik enkel cijfers en koppeltekens.'
+name: Telefoonnummer
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'vb. “09 123 45 67”'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

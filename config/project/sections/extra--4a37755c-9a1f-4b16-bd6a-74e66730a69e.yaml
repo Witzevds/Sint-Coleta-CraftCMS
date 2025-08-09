@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: b873181b-19da-40b0-8224-de69fb273175 # Informatieve Pagina
+handle: extra
+maxAuthors: 1
+name: 'Informatieve Pagina'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    enabledByDefault: true
+    hasUrls: true
+    template: extra/_entry.twig
+    uriFormat: 'extra/{slug}'
+structure:
+  maxLevels: null
+  uid: 36bb17ad-944f-4dc2-8c45-9044ad152523
+type: structure

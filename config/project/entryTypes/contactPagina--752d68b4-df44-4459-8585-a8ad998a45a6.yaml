@@ -1,0 +1,138 @@
+color: purple
+description: 'Alle contactinformatie van het rusthuis, inclusief adres, e-mail, telefoon, openingsuren en Google Maps.'
+fieldLayouts:
+  32a58b90-fe5b-4942-a76f-0d9c46ae799b:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-08T20:13:39+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 662b1f5d-91bd-4eaa-9d2a-2590bbbd6292
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T20:15:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f8f7d6ca-55f6-4dec-b0ff-51d5202f105a # Adres Contact Pagina
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b284c4d0-c674-4b6e-8d9b-0da614ee2cf3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T20:15:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e3520ec2-52e9-4358-a6cd-38fb8f8db8cd # contactpersonen Contact Pagina
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c3b0adeb-8596-421e-ae1f-19a5ecbaf665
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T20:15:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 748ec133-c20c-4ae0-ab56-748a06d207f4 # E-mailadres Contact Pagina
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9feeee6f-25ea-44bd-acc3-8c4bfd67b887
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T20:15:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: b48664c1-0875-4182-b95a-6f06a9b76311 # Openingsuren Contact Pagina
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 01b8b2ee-dbb0-47ef-a4a3-27470f256497
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T20:15:35+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ebfd4cb1-abc4-4baa-b625-b0a64cd77fbe # Telefoonnummer Contact Pagina
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 11486238-30fe-442c-9f28-3dc985d2ffad
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 51c86440-0a9d-40c6-b0ad-6d3e7b5cf11e
+        userCondition: null
+handle: contactPagina
+hasTitleField: true
+icon: address-book
+name: 'Contact Pagina'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

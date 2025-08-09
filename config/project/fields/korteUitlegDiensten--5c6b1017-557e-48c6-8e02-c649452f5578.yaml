@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: korteUitlegDiensten
+instructions: 'Geef een korte beschrijving van de dienst (max. 1–2 zinnen)'
+name: 'Korte Uitleg Diensten'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 300
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: '“De cafetaria is elke namiddag open.”'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

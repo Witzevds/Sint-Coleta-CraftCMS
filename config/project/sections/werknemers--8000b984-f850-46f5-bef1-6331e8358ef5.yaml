@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: e518f377-4520-4929-b9a5-7b4f292ac685 # Werknemer
+handle: werknemers
+maxAuthors: 1
+name: Werknemers
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    enabledByDefault: true
+    hasUrls: true
+    template: werknemers/_entry.twig
+    uriFormat: 'werknemers/{slug}'
+type: channel

@@ -1,0 +1,125 @@
+color: red
+description: 'Naam van medewerker'
+fieldLayouts:
+  4cdd3ea3-286d-478b-9257-2c64ace9bc4c:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-08T18:50:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: cd11f59a-8fea-4354-8412-9e9e3bbd5044 # Naam
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5df871ff-f8ae-41a9-bf42-0cfd81962e06
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T18:50:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: d1df8b1e-5f4a-4e3c-b535-615a3372a2a2 # Functie
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 481727b4-4992-4778-84f2-2b33177411fb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T18:50:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8abe2a0f-01dc-4a66-946f-6aa5dac56c2f # ProfielFoto
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1fdacf59-5ad9-4f63-bda1-6ddca874aad9
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T18:50:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 714facc8-1acc-410a-ae6b-e51ffef246d1 # E-mailadres
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 648feb24-8425-4425-af40-1bd741a196ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T18:50:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: ec83b3b5-8376-4b29-a3c7-9bc78338a15d # Uitleg rol
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2309534b-3e27-475a-9735-825e41062c75
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T18:50:02+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 8e365b63-4ad9-484f-aa57-e3158a8236cd # Telefoonnummer
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6dca2824-237f-44b0-a577-db9782244f05
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9c0f3360-163a-478f-9bd4-fcb5b152f558
+        userCondition: null
+handle: werknemer
+hasTitleField: false
+icon: user-check
+name: Werknemer
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{naam}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,29 @@
+columnSuffix: null
+handle: externeLinkVacature
+instructions: 'Plak hier de link naar VDAB (indien van toepassing)'
+name: 'Externe Link Vacature'
+searchable: false
+settings:
+  fullGraphqlData: true
+  maxLength: 255
+  showLabelField: false
+  typeSettings:
+    __assoc__:
+      -
+        - url
+        -
+          __assoc__:
+            -
+              - allowRootRelativeUrls
+              - ''
+            -
+              - allowAnchors
+              - ''
+            -
+              - allowCustomSchemes
+              - ''
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Link

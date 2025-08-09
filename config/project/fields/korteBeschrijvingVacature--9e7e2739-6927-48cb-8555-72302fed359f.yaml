@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: korteBeschrijvingVacature
+instructions: 'Beschrijf in 1 zin waarvoor deze vacature is'
+name: 'Korte Beschrijving Vacature'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 300
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: '“We zoeken een gemotiveerde zorgkundige voor afdeling B.”'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,104 @@
+color: amber
+description: 'informatieve pagina’s zoals Visie, Geschiedenis, Opdrachtverklaring…'
+fieldLayouts:
+  5941dd37-428f-43d8-bfc1-47eb0ee1b8d5:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-08T20:09:26+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fc19f772-d1ac-46da-a669-c4cd5f692b38
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T20:13:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5b65c935-aea6-4e62-8daf-0ffd730b89d8 # Afbeelding Extra Paginas
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c5b3b5f-6b62-4e2d-b6ae-31f6ec1b6930
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T20:13:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 9617a935-e068-415c-96dc-5063a9c004d0 # Contactpersoon Extra Pagina
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 21edf965-68eb-4a68-8c2a-fd39605aa8cf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T20:13:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: bf2acec6-c1bd-4ccb-9343-f00aabd21868 # Inhoud Extra Paginas
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 222c76c4-d89b-47c4-8ca8-93417faaa96d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 69d685a3-f26f-4d1a-b6a9-ca9923ebe35a
+        userCondition: null
+handle: informatievePagina
+hasTitleField: true
+icon: books
+name: 'Informatieve Pagina'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

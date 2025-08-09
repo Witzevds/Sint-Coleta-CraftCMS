@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: telefoonnummerContactPagina
+instructions: 'Algemeen telefoonnummer voor vragen of afspraken'
+name: 'Telefoonnummer Contact Pagina'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: '“09 123 45 67”'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

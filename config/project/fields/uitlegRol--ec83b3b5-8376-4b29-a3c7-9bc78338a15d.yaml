@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: uitlegRol
+instructions: 'Beschrijf in enkele zinnen de rol of taken van deze medewerker.'
+name: 'Uitleg rol'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 300
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'vb. “Annemie staat in voor de begeleiding van bewoners met dementie…”'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

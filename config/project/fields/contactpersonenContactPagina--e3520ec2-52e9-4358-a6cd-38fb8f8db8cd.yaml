@@ -1,0 +1,26 @@
+columnSuffix: null
+handle: contactpersonenContactPagina
+instructions: 'Selecteer 1 of meerdere medewerkers die getoond mogen worden op de contactpagina.'
+name: 'contactpersonen Contact Pagina'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: false
+  showUnpermittedEntries: false
+  showUnpermittedSections: false
+  sources:
+    - 'section:8000b984-f850-46f5-bef1-6331e8358ef5' # Werknemers
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Entries

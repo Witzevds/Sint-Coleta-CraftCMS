@@ -1,0 +1,125 @@
+color: rose
+description: 'Invoer voor een facilitaire of zorgdienst zoals cafetaria, wellness of keuken.'
+fieldLayouts:
+  492ac8be-92ca-4fab-bae0-d0f18c05df2a:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-08T19:46:22+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 27552098-5a51-46ac-a335-79f37ed1a638 # Dienst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6e9af4cb-f989-49e1-b296-b77b2796405d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T19:44:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 5c6b1017-557e-48c6-8e02-c649452f5578 # Korte Uitleg Diensten
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41f7154b-8091-44ba-99f9-dcb72250795f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T19:44:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: e1a81ce8-47e8-4ce9-88f0-44140d478aca # Openingsuren dienst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6cf54916-2969-46f0-96bd-a439a924beea
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T19:44:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 46a82c05-b280-4758-b103-678657b0c47a # Prijslijst Dienst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b79ecca6-cb6e-4a9a-9e74-29362fc81075
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T19:44:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 58e777c7-7b12-4f64-a700-1534629200d6 # Externe Link Dienst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8645a75-d682-4863-83b9-c4577dc7722d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-08T19:44:59+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: f2fed34e-1d92-4465-9eb6-ea62c64999c9 # Afbeelding dienst
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9499bee0-7cee-4786-9a3c-8ed5b903d1d3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8f2df8a3-cc29-4f96-8691-a3d907aa7649
+        userCondition: null
+handle: dienst
+hasTitleField: false
+icon: bell-concierge
+name: Dienst
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: '{dienst}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

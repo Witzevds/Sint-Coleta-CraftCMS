@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: openingsurenContactPagina
+instructions: 'Wanneer is het onthaal of de cafetaria open?'
+name: 'Openingsuren Contact Pagina'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: "\t“Maandag t.e.m. vrijdag van 9u tot 17u”"
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

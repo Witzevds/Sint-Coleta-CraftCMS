@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: korteBeschrijving
+instructions: 'Beschrijf in 1 of 2 zinnen wat deze publicatie inhoudt.'
+name: 'korte beschrijving Publicatie'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 300
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

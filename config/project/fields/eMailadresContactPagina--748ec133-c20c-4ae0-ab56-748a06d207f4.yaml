@@ -1,0 +1,10 @@
+columnSuffix: null
+handle: eMailadresContactPagina
+instructions: 'Algemeen e-mailadres van het rusthuis'
+name: 'E-mailadres Contact Pagina'
+searchable: false
+settings:
+  placeholder: “info@sintcoleta.be”
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

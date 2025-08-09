@@ -1,0 +1,10 @@
+columnSuffix: null
+handle: eMailadres
+instructions: 'E-mail adres van de werknemer'
+name: E-mailadres
+searchable: false
+settings:
+  placeholder: 'vb. “annemie@sintcoleta.be”'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Email

@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: naam
+instructions: 'Vul hier de volledige naam van de medewerker in.'
+name: Naam
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 30
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'vb. “Annemie Janssens”'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

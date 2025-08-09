@@ -1,12 +1,56 @@
-dateModified: 1754584615
+dateModified: 1754749531
 email:
   fromEmail: witzevds@gmail.com
   fromName: 'Sint Coleta'
   transportType: craft\mail\transportadapters\Sendmail
 meta:
   __names__:
+    0d452ea6-0567-4eba-8592-8634410ff783: Vacatures # Vacatures
+    2d6ae19c-b9df-4bed-b399-cb507e9716c9: 'Publicatie Datum' # Publicatie Datum
+    3d13f122-2913-44eb-a64a-bac4901ababc: Dienst # Dienst
+    4a37755c-9a1f-4b16-bd6a-74e66730a69e: 'Informatieve Pagina' # Informatieve Pagina
+    5b65c935-aea6-4e62-8daf-0ffd730b89d8: 'Afbeelding Extra Paginas' # Afbeelding Extra Paginas
+    5c6b1017-557e-48c6-8e02-c649452f5578: 'Korte Uitleg Diensten' # Korte Uitleg Diensten
     7a19be51-2e75-477b-b593-bfdf3fd6de08: 'Sint Coleta' # Sint Coleta
+    8abe2a0f-01dc-4a66-946f-6aa5dac56c2f: ProfielFoto # ProfielFoto
+    8e365b63-4ad9-484f-aa57-e3158a8236cd: Telefoonnummer # Telefoonnummer
+    9e7e2739-6927-48cb-8555-72302fed359f: 'Korte Beschrijving Vacature' # Korte Beschrijving Vacature
+    9fd78c8c-94e2-4ab2-bb3f-bd51f6b2f071: Contact # Contact
+    46a82c05-b280-4758-b103-678657b0c47a: 'Prijslijst Dienst' # Prijslijst Dienst
+    58e777c7-7b12-4f64-a700-1534629200d6: 'Externe Link Dienst' # Externe Link Dienst
     73c11b7a-b599-43c3-915f-d33cc7a9a076: 'Sint Coleta' # Sint Coleta
+    90ddb4bc-c04f-427c-a2cd-d2087eef1ad1: Dienstverlening # Dienstverlening
+    97a473e1-4261-4239-b327-48b29cec72c7: IntroTekst # IntroTekst
+    502d3bf4-d073-4479-8044-26cda62a61f1: 'Werknemers categorieën' # Werknemers categorieën
+    714facc8-1acc-410a-ae6b-e51ffef246d1: E-mailadres # E-mailadres
+    748ec133-c20c-4ae0-ab56-748a06d207f4: 'E-mailadres Contact Pagina' # E-mailadres Contact Pagina
+    752d68b4-df44-4459-8585-a8ad998a45a6: 'Contact Pagina' # Contact Pagina
+    8000b984-f850-46f5-bef1-6331e8358ef5: Werknemers # Werknemers
+    9617a935-e068-415c-96dc-5063a9c004d0: 'Contactpersoon Extra Pagina' # Contactpersoon Extra Pagina
+    27552098-5a51-46ac-a335-79f37ed1a638: Dienst # Dienst
+    a4ea1933-a774-4a96-ab30-f349fa306002: Home # Home
+    b0fe89d3-67e4-4466-b6d6-41498b6b53e4: 'korte beschrijving Publicatie' # korte beschrijving Publicatie
+    b3bd65ce-7cba-4e7e-9032-91f8bab3feda: PDF-Bestand # PDF-Bestand
+    b22a55b1-0b5d-4f9a-99d7-e5ec233f9c7f: 'Google Maps Link ' # Google Maps Link 
+    b91fc340-8606-4546-a404-7e74d51a9d74: 'Externe Link Vacature' # Externe Link Vacature
+    b48664c1-0875-4182-b95a-6f06a9b76311: 'Openingsuren Contact Pagina' # Openingsuren Contact Pagina
+    b873181b-19da-40b0-8224-de69fb273175: 'Informatieve Pagina' # Informatieve Pagina
+    bf2acec6-c1bd-4ccb-9343-f00aabd21868: 'Inhoud Extra Paginas' # Inhoud Extra Paginas
+    c4bd26f8-9b88-42e9-af8d-3d8069110533: 'Publicatie Type' # Publicatie Type
+    c54651e8-c41e-43e4-abac-4fe49424d135: Homepage # Homepage
+    cd11f59a-8fea-4354-8412-9e9e3bbd5044: Naam # Naam
+    d1df8b1e-5f4a-4e3c-b535-615a3372a2a2: Functie # Functie
+    d12a1b7e-9581-4a7e-9c13-4093428236b4: 'Publicatie Types' # Publicatie Types
+    e1a81ce8-47e8-4ce9-88f0-44140d478aca: 'Openingsuren dienst' # Openingsuren dienst
+    e9d9ed4b-05f3-487a-a727-c3217546dc7e: 'Contact Persoon Vacature' # Contact Persoon Vacature
+    e99a190b-5f45-4ee8-b9be-20345de29949: Vacature # Vacature
+    e518f377-4520-4929-b9a5-7b4f292ac685: Werknemer # Werknemer
+    e3520ec2-52e9-4358-a6cd-38fb8f8db8cd: 'contactpersonen Contact Pagina' # contactpersonen Contact Pagina
+    ebfd4cb1-abc4-4baa-b625-b0a64cd77fbe: 'Telefoonnummer Contact Pagina' # Telefoonnummer Contact Pagina
+    ec83b3b5-8376-4b29-a3c7-9bc78338a15d: 'Uitleg rol' # Uitleg rol
+    f2fed34e-1d92-4465-9eb6-ea62c64999c9: 'Afbeelding dienst' # Afbeelding dienst
+    f8f7d6ca-55f6-4dec-b0ff-51d5202f105a: 'Adres Contact Pagina' # Adres Contact Pagina
+    f9c980ce-ffb1-492b-8828-a605e53046be: 'Volledige Omschrijving Vacature' # Volledige Omschrijving Vacature
 system:
   edition: solo
   live: true

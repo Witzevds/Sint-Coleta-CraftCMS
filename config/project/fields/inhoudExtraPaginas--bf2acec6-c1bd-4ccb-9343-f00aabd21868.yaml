@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: inhoudExtraPaginas
+instructions: 'Voeg hier de volledige tekst in voor deze pagina. Je mag titels, paragrafen of lijsten gebruiken.'
+name: 'Inhoud Extra Paginas'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: '“Vul hier de inhoud van de pagina in.”'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

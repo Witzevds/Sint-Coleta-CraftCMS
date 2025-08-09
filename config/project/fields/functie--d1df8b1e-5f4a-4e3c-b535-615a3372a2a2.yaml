@@ -1,0 +1,23 @@
+columnSuffix: null
+handle: functie
+instructions: 'Geef hier de officiële functietitel van de medewerker.'
+name: Functie
+searchable: true
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  defaultPlacement: end
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: false
+  showSearchInput: true
+  showSiteMenu: true
+  source: 'group:502d3bf4-d073-4479-8044-26cda62a61f1' # Werknemers categorieën
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: list
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

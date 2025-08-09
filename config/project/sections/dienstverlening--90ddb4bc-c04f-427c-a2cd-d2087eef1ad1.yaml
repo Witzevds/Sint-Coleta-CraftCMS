@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 3d13f122-2913-44eb-a64a-bac4901ababc # Dienst
+handle: dienstverlening
+maxAuthors: 1
+name: Dienstverlening
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    enabledByDefault: true
+    hasUrls: true
+    template: dienstverlening/_entry.twig
+    uriFormat: 'dienstverlening/{slug}'
+structure:
+  maxLevels: null
+  uid: 9cafa79c-1348-4288-acb1-0e46cb3f9465
+type: structure

@@ -1,0 +1,51 @@
+defaultPlacement: end
+fieldLayouts:
+  0cbb32b8-8339-4257-a40c-330d445dc4b9:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-08T18:44:52+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 4263140f-d74d-4573-81eb-4e8d80cfe5cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cbbf0b15-090f-4e8e-9106-a3939c9ede1d
+        userCondition: null
+handle: werknemersCategorieen
+name: 'Werknemers categorieën'
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 800ab78b-5fbe-4fec-9f25-fba4735ef87d
