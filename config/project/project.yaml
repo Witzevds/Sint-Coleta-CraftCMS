@@ -1,8 +1,16 @@
-dateModified: 1754749531
+dateModified: 1754848920
 email:
   fromEmail: witzevds@gmail.com
   fromName: 'Sint Coleta'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  localUploads:
+    hasUrls: true
+    name: 'Local Uploads'
+    settings:
+      path: '{$ASSETS_BASE_PATH}'
+    type: craft\fs\Local
+    url: '{$ASSETS_BASE_URL}'
 meta:
   __names__:
     0d452ea6-0567-4eba-8592-8634410ff783: Vacatures # Vacatures
