@@ -3,10 +3,10 @@
     .one() %}
 
 {% if siteSettings and siteSettings.siteLogo|length %}
-  {% set logo = siteSettings.siteLogo.one() %}
-  <a href="{{ siteUrl }}">
-    <img src="{{ logo.url }}" alt="Logo {{ siteName }}">
-    
+	{% set logo = siteSettings.siteLogo.one() %}
+	<a href="{{ siteUrl }}">
+		<img src="{{ logo.url }}" alt="Logo {{ siteName }}">
 
-  </a>
+
+	</a>
 {% endif %}
