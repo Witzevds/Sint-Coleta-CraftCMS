@@ -1,4 +1,4 @@
-dateModified: 1754850930
+dateModified: 1754919258
 email:
   fromEmail: witzevds@gmail.com
   fromName: 'Sint Coleta'
@@ -19,6 +19,7 @@ meta:
     1f2afb75-6a53-471d-877e-4a42c92b3dcb: Publicaties # Publicaties
     2d6ae19c-b9df-4bed-b399-cb507e9716c9: 'Publicatie Datum' # Publicatie Datum
     3d13f122-2913-44eb-a64a-bac4901ababc: Dienst # Dienst
+    3dee15d5-6575-49ec-b1ee-f82825f048ec: 'Ouderen Zorg' # Ouderen Zorg
     4a37755c-9a1f-4b16-bd6a-74e66730a69e: 'Informatieve Pagina' # Informatieve Pagina
     5b65c935-aea6-4e62-8daf-0ffd730b89d8: 'Afbeelding Extra Paginas' # Afbeelding Extra Paginas
     5c6b1017-557e-48c6-8e02-c649452f5578: 'Korte Uitleg Diensten' # Korte Uitleg Diensten
@@ -47,6 +48,7 @@ meta:
     89276b58-e746-4865-9457-e4f9032bb98c: 'Site Logos' # Site Logos
     91215abf-fe9c-4aa7-a1c8-ed37cb28a365: Favicons # Favicons
     27552098-5a51-46ac-a335-79f37ed1a638: Dienst # Dienst
+    34833753-e669-4115-b7c0-a267585cb788: 'Soorten Zorg' # Soorten Zorg
     79688786-8ab6-4c03-814f-9fb4dbdf1524: 'Hero images' # Hero images
     a4ea1933-a774-4a96-ab30-f349fa306002: Home # Home
     aece8eaf-ca86-46e5-93cf-58b02d47b2fc: 'Content Images' # Content Images

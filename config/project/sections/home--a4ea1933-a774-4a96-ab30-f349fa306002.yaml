@@ -23,6 +23,6 @@ siteSettings:
   7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
     enabledByDefault: true
     hasUrls: true
-    template: home.twig
+    template: home/index.twig
     uriFormat: __home__
 type: single

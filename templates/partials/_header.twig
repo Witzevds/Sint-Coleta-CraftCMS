@@ -1,12 +1,25 @@
-{% set siteSettings = craft.globalSets()
-    .handle('siteInstellingen')
-    .one() %}
+<header>
+	<div class="header-img">
+		{% if siteSettings and siteSettings.siteLogo|length %}
+			{% set logo = siteSettings.siteLogo.one() %}
+			<a href="{{ siteUrl('') }}">
+				<img src="{{ logo.url }}" alt="Logo {{ siteName }}">
+			</a>
+		{% else %}
+			<a href="{{ siteUrl('') }}">{{ siteName }}</a>
+		{% endif %}
+	</div>
 
-{% if siteSettings and siteSettings.siteLogo|length %}
-	{% set logo = siteSettings.siteLogo.one() %}
-	<a href="{{ siteUrl }}">
-		<img src="{{ logo.url }}" alt="Logo {{ siteName }}">
+	<nav class="header-nav">
+		<a class="header-nav__link" href="{{ url('vacatures') }}">Vacatures</a>
+		<a class="header-nav__link" href="{{ url('algemeen') }}">Algemene Info</a>
+		<a class="header-nav__link" href="{{ url('ouderen-zorg') }}">Residentiële Ouderenzorg</a>
+		<a class="header-nav__link" href="{{ url('diensten') }}">Dienstverlening</a>
+	</nav>
 
+	<div class="header-contact">
 
-	</a>
-{% endif %}
+		<a class="header-contact__btn" href="{{ url('contact') }}">Contact</a>
+
+	</div>
+</header>

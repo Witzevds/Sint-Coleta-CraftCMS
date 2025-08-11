@@ -1,0 +1,16 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 34833753-e669-4115-b7c0-a267585cb788 # Soorten Zorg
+handle: ouderenZorg
+maxAuthors: null
+name: 'Ouderen Zorg'
+propagationMethod: all
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    enabledByDefault: true
+    hasUrls: true
+    template: ouderen-zorg/_entry.twig
+    uriFormat: 'ouderen-zorg/{slug}'
+type: channel

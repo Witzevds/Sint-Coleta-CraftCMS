@@ -1,0 +1,19 @@
+{% extends "base/base.twig" %}
+
+{% block content %}
+	<h1>Vacatures</h1>
+	{% set vacatures = craft.entries().section('vacatures').orderBy('postDate desc').all() %}
+	<ul>
+		{% for v in vacatures %}
+			<li>
+				<h2>{{ v.title }}</h2>
+				{% if v.korteBeschrijvingVacature %}
+					<p>{{ v.korteBeschrijvingVacature }}</p>
+				{% endif %}
+				<a href="{{ v.url }}">Bekijk vacature</a>
+			</li>
+		{% else %}
+			<li>Geen vacatures gevonden.</li>
+		{% endfor %}
+	</ul>
+{% endblock %}

@@ -1,0 +1,29 @@
+{% extends "base/base.twig" %}
+
+{% block content %}
+	<article>
+		<h1>{{ entry.title }}</h1>
+
+		{% if entry.korteBeschrijvingVacature %}
+			<p>{{ entry.korteBeschrijvingVacature }}</p>
+		{% endif %}
+
+		{% if entry.publicatieDatum %}
+			<p>
+				<small>Gepubliceerd op
+					{{ entry.publicatieDatum|date('d-m-Y') }}</small>
+			</p>
+		{% elseif entry.postDate %}
+			<p>
+				<small>Gepubliceerd op
+					{{ entry.postDate|date('d-m-Y') }}</small>
+			</p>
+		{% endif %}
+
+		{% if entry.volledigeOmschrijvingVacature %}
+			<div>
+				{{ entry.volledigeOmschrijvingVacature }}
+			</div>
+		{% endif %}
+	</article>
+{% endblock %}

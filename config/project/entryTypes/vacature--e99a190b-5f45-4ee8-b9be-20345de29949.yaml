@@ -3,6 +3,9 @@ description: 'Voeg hier een vacature toe zoals die gepubliceerd wordt op de webs
 fieldLayouts:
   95f4e154-4902-4927-af6d-f85c4517139e:
     cardThumbAlignment: end
+    cardView:
+      - uri
+      - slug
     tabs:
       -
         elementCondition: null
