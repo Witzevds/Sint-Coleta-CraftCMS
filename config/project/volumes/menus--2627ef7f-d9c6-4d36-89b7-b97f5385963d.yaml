@@ -1,0 +1,55 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  8ae01db4-dfa8-4f18-8aca-a3a278cb7726:
+    cardThumbAlignment: end
+    cardView:
+      - dateCreated
+      - size
+      - filename
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-10T18:10:38+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 9195d396-3823-4728-9377-c150192a0241
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 27aeb92e-3ed8-435b-b34d-cb3578172e74
+        userCondition: null
+fs: localUploads
+handle: menus
+name: Menus
+sortOrder: 10
+subpath: keuken/menus
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

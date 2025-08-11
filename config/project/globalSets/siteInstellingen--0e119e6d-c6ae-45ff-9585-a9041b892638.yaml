@@ -1,0 +1,47 @@
+fieldLayouts:
+  f91e60b6-e37b-49c1-8e5b-4ebaec272532:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-08-10T18:35:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: 229f8e16-fb60-46ea-89a6-974570a818bf # Site Logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 919a087f-9c71-481a-97c7-c9977358c3ca
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-10T18:35:30+00:00'
+            editCondition: null
+            elementCondition: null
+            fieldUid: fe95ca45-6a84-49d5-80fc-ca7a9769aee4 # Favicons
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 42268edb-08ba-4ab8-a10b-65ad30721b0c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 448e9be3-eb6e-47ae-9cfd-998bc53d8259
+        userCondition: null
+handle: siteInstellingen
+name: 'Site Instellingen'
+sortOrder: 1

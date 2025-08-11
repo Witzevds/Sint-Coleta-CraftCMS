@@ -1,12 +1,12 @@
-{% block header %}
-  <div class="header">
-   <div class="header-left">
+{% set siteSettings = craft.globalSets()
+    .handle('siteInstellingen')
+    .one() %}
 
-    <img src="/images/sint-coleta-logo.png" alt="">
-    <h1>hey</h1>
-   </div>
+{% if siteSettings and siteSettings.siteLogo|length %}
+  {% set logo = siteSettings.siteLogo.one() %}
+  <a href="{{ siteUrl }}">
+    <img src="{{ logo.url }}" alt="Logo {{ siteName }}">
+    
 
-  </div>
-
-
-{% endblock %}
+  </a>
+{% endif %}

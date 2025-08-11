@@ -1,0 +1,56 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  46f7a087-52b2-40aa-b5db-9c569dc537da:
+    cardThumbAlignment: end
+    cardView:
+      - dateCreated
+      - imageSize
+      - size
+      - filename
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-10T18:06:22+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 92bbc635-ea41-4a08-862c-15a2d34348d0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cb809093-d6aa-4e16-be92-0caefe2e8433
+        userCondition: null
+fs: localUploads
+handle: careImages
+name: 'Care Images'
+sortOrder: 5
+subpath: zorg
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

@@ -1,0 +1,56 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  aa56a099-4f4d-402d-b982-fd615c43ae96:
+    cardThumbAlignment: end
+    cardView:
+      - dateCreated
+      - imageSize
+      - size
+      - filename
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-10T18:04:55+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 35d87803-45dd-401c-8488-22cc7c375cb2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9ee2943b-f06b-40e8-afee-a82953dd0fcc
+        userCondition: null
+fs: localUploads
+handle: heroImages
+name: 'Hero images'
+sortOrder: 3
+subpath: hero
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

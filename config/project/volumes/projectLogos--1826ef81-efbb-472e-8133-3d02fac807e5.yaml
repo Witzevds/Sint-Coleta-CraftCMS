@@ -1,0 +1,56 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  474d2c1b-2470-4304-9749-6d7b9b5dcb29:
+    cardThumbAlignment: end
+    cardView:
+      - dateCreated
+      - imageSize
+      - size
+      - filename
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-10T18:07:33+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: adaf6a3d-1007-4f72-866b-7267085e3176
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dca0d843-3512-4d2a-903e-bcf95ea9af0c
+        userCondition: null
+fs: localUploads
+handle: projectLogos
+name: 'Project Logos'
+sortOrder: 7
+subpath: projectLogos
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

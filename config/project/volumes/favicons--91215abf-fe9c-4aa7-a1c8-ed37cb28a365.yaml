@@ -1,0 +1,56 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  551de910-432d-432f-a2fd-26214730b440:
+    cardThumbAlignment: end
+    cardView:
+      - dateCreated
+      - imageSize
+      - size
+      - filename
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-10T18:03:40+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 5d5dc903-5417-43f1-82bb-2ae8c60d685d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e9cbea04-10a4-40bb-8a67-b343a979cbba
+        userCondition: null
+fs: localUploads
+handle: favicons
+name: Favicons
+sortOrder: 2
+subpath: favicons
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''

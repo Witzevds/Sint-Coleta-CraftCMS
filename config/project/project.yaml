@@ -1,4 +1,4 @@
-dateModified: 1754848920
+dateModified: 1754850930
 email:
   fromEmail: witzevds@gmail.com
   fromName: 'Sint Coleta'
@@ -8,12 +8,15 @@ fs:
     hasUrls: true
     name: 'Local Uploads'
     settings:
-      path: '{$ASSETS_BASE_PATH}'
+      path: $ASSETS_BASE_PATH
     type: craft\fs\Local
-    url: '{$ASSETS_BASE_URL}'
+    url: $ASSETS_BASE_URL
 meta:
   __names__:
     0d452ea6-0567-4eba-8592-8634410ff783: Vacatures # Vacatures
+    0e119e6d-c6ae-45ff-9585-a9041b892638: 'Site Instellingen' # Site Instellingen
+    0f91a800-a625-4178-946b-af5999e61eb2: 'Icons ' # Icons 
+    1f2afb75-6a53-471d-877e-4a42c92b3dcb: Publicaties # Publicaties
     2d6ae19c-b9df-4bed-b399-cb507e9716c9: 'Publicatie Datum' # Publicatie Datum
     3d13f122-2913-44eb-a64a-bac4901ababc: Dienst # Dienst
     4a37755c-9a1f-4b16-bd6a-74e66730a69e: 'Informatieve Pagina' # Informatieve Pagina
@@ -22,21 +25,31 @@ meta:
     7a19be51-2e75-477b-b593-bfdf3fd6de08: 'Sint Coleta' # Sint Coleta
     8abe2a0f-01dc-4a66-946f-6aa5dac56c2f: ProfielFoto # ProfielFoto
     8e365b63-4ad9-484f-aa57-e3158a8236cd: Telefoonnummer # Telefoonnummer
+    9b0816f1-7b84-422f-98e3-26af5e73b209: 'Care Images' # Care Images
+    9e0bc30a-8b19-4d11-8fa4-d4f600c3661a: 'Service Images' # Service Images
     9e7e2739-6927-48cb-8555-72302fed359f: 'Korte Beschrijving Vacature' # Korte Beschrijving Vacature
     9fd78c8c-94e2-4ab2-bb3f-bd51f6b2f071: Contact # Contact
     46a82c05-b280-4758-b103-678657b0c47a: 'Prijslijst Dienst' # Prijslijst Dienst
     58e777c7-7b12-4f64-a700-1534629200d6: 'Externe Link Dienst' # Externe Link Dienst
+    064d3812-0b36-46ad-8dca-3d7ae5861b0f: 'Project Images' # Project Images
     73c11b7a-b599-43c3-915f-d33cc7a9a076: 'Sint Coleta' # Sint Coleta
     90ddb4bc-c04f-427c-a2cd-d2087eef1ad1: Dienstverlening # Dienstverlening
     97a473e1-4261-4239-b327-48b29cec72c7: IntroTekst # IntroTekst
+    229f8e16-fb60-46ea-89a6-974570a818bf: 'Site Logo' # Site Logo
     502d3bf4-d073-4479-8044-26cda62a61f1: 'Werknemers categorieën' # Werknemers categorieën
     714facc8-1acc-410a-ae6b-e51ffef246d1: E-mailadres # E-mailadres
     748ec133-c20c-4ae0-ab56-748a06d207f4: 'E-mailadres Contact Pagina' # E-mailadres Contact Pagina
     752d68b4-df44-4459-8585-a8ad998a45a6: 'Contact Pagina' # Contact Pagina
+    1826ef81-efbb-472e-8133-3d02fac807e5: 'Project Logos' # Project Logos
+    2627ef7f-d9c6-4d36-89b7-b97f5385963d: Menus # Menus
     8000b984-f850-46f5-bef1-6331e8358ef5: Werknemers # Werknemers
     9617a935-e068-415c-96dc-5063a9c004d0: 'Contactpersoon Extra Pagina' # Contactpersoon Extra Pagina
+    89276b58-e746-4865-9457-e4f9032bb98c: 'Site Logos' # Site Logos
+    91215abf-fe9c-4aa7-a1c8-ed37cb28a365: Favicons # Favicons
     27552098-5a51-46ac-a335-79f37ed1a638: Dienst # Dienst
+    79688786-8ab6-4c03-814f-9fb4dbdf1524: 'Hero images' # Hero images
     a4ea1933-a774-4a96-ab30-f349fa306002: Home # Home
+    aece8eaf-ca86-46e5-93cf-58b02d47b2fc: 'Content Images' # Content Images
     b0fe89d3-67e4-4466-b6d6-41498b6b53e4: 'korte beschrijving Publicatie' # korte beschrijving Publicatie
     b3bd65ce-7cba-4e7e-9032-91f8bab3feda: PDF-Bestand # PDF-Bestand
     b22a55b1-0b5d-4f9a-99d7-e5ec233f9c7f: 'Google Maps Link ' # Google Maps Link 
@@ -49,6 +62,7 @@ meta:
     cd11f59a-8fea-4354-8412-9e9e3bbd5044: Naam # Naam
     d1df8b1e-5f4a-4e3c-b535-615a3372a2a2: Functie # Functie
     d12a1b7e-9581-4a7e-9c13-4093428236b4: 'Publicatie Types' # Publicatie Types
+    e0b6cdfb-149c-4295-af01-c3934305ac6f: 'Staff Photos' # Staff Photos
     e1a81ce8-47e8-4ce9-88f0-44140d478aca: 'Openingsuren dienst' # Openingsuren dienst
     e9d9ed4b-05f3-487a-a727-c3217546dc7e: 'Contact Persoon Vacature' # Contact Persoon Vacature
     e99a190b-5f45-4ee8-b9be-20345de29949: Vacature # Vacature
@@ -59,6 +73,9 @@ meta:
     f2fed34e-1d92-4465-9eb6-ea62c64999c9: 'Afbeelding dienst' # Afbeelding dienst
     f8f7d6ca-55f6-4dec-b0ff-51d5202f105a: 'Adres Contact Pagina' # Adres Contact Pagina
     f9c980ce-ffb1-492b-8828-a605e53046be: 'Volledige Omschrijving Vacature' # Volledige Omschrijving Vacature
+    f344656f-f92a-4a7f-b55f-74800de51ab5: 'Price List' # Price List
+    fb5dbd1b-702f-4939-a225-896b4cfd118e: Forms # Forms
+    fe95ca45-6a84-49d5-80fc-ca7a9769aee4: Favicons # Favicons
 system:
   edition: solo
   live: true

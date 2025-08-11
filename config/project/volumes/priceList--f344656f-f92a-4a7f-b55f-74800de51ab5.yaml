@@ -1,0 +1,55 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  f5402484-24d0-4880-924e-e1110e46f381:
+    cardThumbAlignment: end
+    cardView:
+      - dateCreated
+      - size
+      - filename
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-10T18:11:23+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 9bcbb819-49f0-4a0e-b881-4e547230b370
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: db90ee21-f952-4d7d-b255-b2480be94385
+        userCondition: null
+fs: localUploads
+handle: priceList
+name: 'Price List'
+sortOrder: 11
+subpath: pricelist
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: ''
