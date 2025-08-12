@@ -1,5 +1,70 @@
 {% extends "base/base.twig" %}
 
 {% block content %}
-	<h1>hello</h1>
-{% endblock %}
+	{# Intro uit de Home-entry #}
+	{% if entry.introtekst %}
+		<section class="home-intro">
+			{{ entry.introtekst }}
+		</section>
+	{% endif %}
+
+	{# Dienstverlening overzicht #}
+	<section class="home-diensten">
+		<h2>Dienstverlening</h2>
+		{% set diensten = craft.entries().section('dienstverlening').limit(6).all() %}
+		<ul>
+			{% for d in diensten %}
+				<li>
+					<a href="{{ d.getUrl() }}">{{ d.title }}</a>
+					{% if d.korteUitlegDiensten %}
+						<p>{{ d.korteUitlegDiensten }}</p>
+					{% endif %}
+				</li>
+			{% else %}
+				<li>Geen diensten.</li>
+			{% endfor %}
+		</ul>
+		<p>
+			<a href="{{ url('diensten') }}">Alle diensten</a>
+		</p>
+	</section>
+
+	{# Residentiële ouderenzorg overzicht #}
+	<section class="home-ouderen-zorg">
+		<h2>Residentiële ouderenzorg</h2>
+		{% set zorg = craft.entries().section('ouderenZorg').limit(3).all() %}
+		<ul>
+			{% for z in zorg %}
+				<li>
+					<a href="{{ z.getUrl() }}">{{ z.title }}</a>
+				</li>
+			{% else %}
+				<li>Geen pagina’s.</li>
+			{% endfor %}
+		</ul>
+		<p>
+			<a href="{{ url('ouderen-zorg') }}">Meer over ouderenzorg</a>
+		</p>
+	</section>
+
+	{# Vacatures overzicht #}
+	<section class="home-vacatures">
+		<h2>Vacatures</h2>
+		{% set vacatures = craft.entries().section('vacatures').orderBy('postDate desc').limit(3).all() %}
+		<ul>
+			{% for v in vacatures %}
+				<li>
+					<a href="{{ v.getUrl() }}">{{ v.title }}</a>
+					{% if v.korteBeschrijvingVacature %}
+						<p>{{ v.korteBeschrijvingVacature }}</p>
+					{% endif %}
+				</li>
+			{% else %}
+				<li>Momenteel geen vacatures.</li>
+			{% endfor %}
+		</ul>
+		<p>
+			<a href="{{ url('vacatures') }}">Alle vacatures</a>
+		</p>
+
+	{% endblock %}

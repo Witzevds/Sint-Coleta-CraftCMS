@@ -1,4 +1,4 @@
-dateModified: 1754919258
+dateModified: 1754923369
 email:
   fromEmail: witzevds@gmail.com
   fromName: 'Sint Coleta'
@@ -23,6 +23,7 @@ meta:
     4a37755c-9a1f-4b16-bd6a-74e66730a69e: 'Informatieve Pagina' # Informatieve Pagina
     5b65c935-aea6-4e62-8daf-0ffd730b89d8: 'Afbeelding Extra Paginas' # Afbeelding Extra Paginas
     5c6b1017-557e-48c6-8e02-c649452f5578: 'Korte Uitleg Diensten' # Korte Uitleg Diensten
+    6f02beaa-17a0-4a9c-a32d-fbe673c00b5e: Default # Default
     7a19be51-2e75-477b-b593-bfdf3fd6de08: 'Sint Coleta' # Sint Coleta
     8abe2a0f-01dc-4a66-946f-6aa5dac56c2f: ProfielFoto # ProfielFoto
     8e365b63-4ad9-484f-aa57-e3158a8236cd: Telefoonnummer # Telefoonnummer
@@ -78,6 +79,11 @@ meta:
     f344656f-f92a-4a7f-b55f-74800de51ab5: 'Price List' # Price List
     fb5dbd1b-702f-4939-a225-896b4cfd118e: Forms # Forms
     fe95ca45-6a84-49d5-80fc-ca7a9769aee4: Favicons # Favicons
+plugins:
+  cp-nav:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.11
 system:
   edition: solo
   live: true

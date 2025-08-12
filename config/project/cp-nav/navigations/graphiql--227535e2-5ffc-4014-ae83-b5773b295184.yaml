@@ -1,0 +1,16 @@
+currLabel: GraphiQL
+customIcon: null
+enabled: true
+handle: graphiql
+icon: null
+layout: 6f02beaa-17a0-4a9c-a32d-fbe673c00b5e # Default
+level: 2
+newWindow: true
+parent: fee0fdf0-3004-420c-a1d4-c1b0a6d60b8f
+prevLabel: GraphiQL
+prevLevel: 2
+prevParent: fee0fdf0-3004-420c-a1d4-c1b0a6d60b8f
+prevUrl: graphiql
+sortOrder: 9
+type: craft
+url: graphiql
