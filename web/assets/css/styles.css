@@ -1,3 +1,6 @@
+@import "pages/contact.css";
+@import "utilities.css";
+
 :root {
   --primary-color: #cab37f;
   --secondary-color: #ee7919;

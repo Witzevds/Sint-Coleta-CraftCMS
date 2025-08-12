@@ -4,6 +4,7 @@
   "require": {
     "craftcms/ckeditor": "4.9.0",
     "craftcms/cms": "^5.0.0",
+    "craftcms/contact-form": "3.1.0",
     "mmikkel/cp-field-inspect": "2.0.4",
     "verbb/cp-nav": "5.0.5",
     "vlucas/phpdotenv": "^5.4.0"

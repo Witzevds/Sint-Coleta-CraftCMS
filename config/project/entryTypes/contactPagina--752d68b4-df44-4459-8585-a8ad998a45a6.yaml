@@ -42,7 +42,7 @@ fieldLayouts:
             editCondition: null
             elementCondition: null
             fieldUid: f8f7d6ca-55f6-4dec-b0ff-51d5202f105a # Adres Contact Pagina
-            handle: null
+            handle: addressContactPagina
             includeInCards: false
             instructions: null
             label: null

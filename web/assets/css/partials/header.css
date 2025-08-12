@@ -2,6 +2,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 1rem;
   & .header-img {
     width: 20%;
     & img {

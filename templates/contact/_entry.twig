@@ -1,7 +1,84 @@
 {% extends "base/base.twig" %}
 {% block content %}
-	<h1>Contact</h1>
-	{% if entry.eMailadresContactPagina %}
-		<p>{{ entry.eMailadresContactPagina }}</p>
-	{% endif %}
+
+	<div class="contact">
+		<div class="contact-information">
+			<h1>Contact Us</h1>
+			<div class="contact-information__address">
+				<img src="" alt="">
+				<div class="contact-information__text">
+					<div class="icon-wrap">
+						<img src="/assets/icons/location.svg" alt="">
+						<p>Adres</p>
+					</div>
+
+					{% set a = entry.addressContactPagina.one() %}
+					{% if a %}
+						<p>{{ a.addressLine1 }}
+							{% if a.addressLine2 %},
+								{{ a.addressLine2 }}
+							{% endif %},
+							{{ a.postalCode }}
+							{{ a.locality }}</p>
+					{% else %}
+						<p>(Geen adres ingesteld)</p>
+					{% endif %}
+					<hr>
+					<div>
+						<h3>Stuur ons een bericht</h3>
+						<p>Maakt niet uit of je een vraag of hulp nodig hebt twijfel niet om ons te contacteren.</p>
+
+						<div class="contact-information__phone">
+							<div class="icon-wrap">
+								<img src="/assets/icons/phone.svg" alt="">
+								<p>{{entry.telefoonnummerContactPagina}}</p>
+							</div>
+
+						</div>
+
+						<div class="contact-information__mail">
+							<div class="icon-wrap">
+								<img src="/assets/icons/mail.svg" alt="">
+								<p>{{entry.eMailadresContactPagina}}</p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="contact-form">
+			{% if craft.app.session.hasFlash('success') %}
+				<p class="message success">Bericht verzonden.</p>
+			{% elseif craft.app.session.hasFlash('error') %}
+				<p class="message error">Versturen mislukt. Controleer je velden.</p>
+			{% endif %}
+
+			{% set s = submission ?? null %}
+
+			{% if not craft.app.session.hasFlash('success') %}
+				<form method="post" class="contact-form">
+					{{ csrfInput() }}
+					{{ actionInput('contact-form/send') }}
+
+					<label>Full name
+						<input type="text" name="fromName" required value="{{ s.fromName ?? '' }}">
+					</label>
+
+					<label>Email
+						<input type="email" name="fromEmail" required value="{{ s.fromEmail ?? '' }}">
+					</label>
+
+					<label>Your message
+						<textarea name="message" rows="6" required>{{ s.message ?? s.message.body ?? '' }}</textarea>
+					</label>
+
+					<button type="submit">Send message</button>
+				</form>
+			{% endif %}
+		</div>
+	</div>
+
 {% endblock %}

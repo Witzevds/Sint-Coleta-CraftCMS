@@ -1,0 +1,20 @@
+.contact {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  & .contact-information {
+    width: 50%;
+  }
+
+  & .contact-form {
+    width: 50%;
+    & form {
+      width: 100%;
+    }
+
+    & input,
+    textarea {
+      width: 100%;
+    }
+  }
+}

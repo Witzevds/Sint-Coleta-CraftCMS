@@ -1,4 +1,4 @@
-dateModified: 1754999021
+dateModified: 1755006769
 email:
   fromEmail: witzevds@gmail.com
   fromName: 'Sint Coleta'
@@ -93,6 +93,17 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 3.0.0.0
+  contact-form:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      allowAttachments: ''
+      allowedMessageFields: null
+      prependSender: 'On behalf of'
+      prependSubject: 'New message from Sint Coleta'
+      successFlashMessage: 'Your message has been sent.'
+      toEmail: sint-coleta@gmail.com
   cp-nav:
     edition: standard
     enabled: true
