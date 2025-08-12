@@ -2,6 +2,7 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
+    "craftcms/ckeditor": "4.9.0",
     "craftcms/cms": "^5.0.0",
     "mmikkel/cp-field-inspect": "2.0.4",
     "verbb/cp-nav": "5.0.5",

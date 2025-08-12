@@ -10,23 +10,22 @@
 
 	{# Dienstverlening overzicht #}
 	<section class="home-diensten">
-		<h2>Dienstverlening</h2>
-		{% set diensten = craft.entries().section('dienstverlening').limit(6).all() %}
+		<h2>dienstverlening</h2>
+
+		{% set dienstverlening = craft.entries().section('dienstverlening').limit(6).all() %}
+
 		<ul>
-			{% for d in diensten %}
+			{% for dienst in dienstverlening %}
+
 				<li>
-					<a href="{{ d.getUrl() }}">{{ d.title }}</a>
-					{% if d.korteUitlegDiensten %}
-						<p>{{ d.korteUitlegDiensten }}</p>
-					{% endif %}
+					<p>{{dienst.title}}</p>
+					<p>{{dienst.korteUitlegDiensten}}</p>
+					<a href="{{ dienst.getUrl() }}">Meer informatie</a>
 				</li>
-			{% else %}
-				<li>Geen diensten.</li>
+
 			{% endfor %}
+
 		</ul>
-		<p>
-			<a href="{{ url('diensten') }}">Alle diensten</a>
-		</p>
 	</section>
 
 	{# Residentiële ouderenzorg overzicht #}

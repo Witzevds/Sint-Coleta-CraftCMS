@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: korteBeschrijvingVisie
+instructions: 'Hier voer je een korte beschrijving van de visie in deze komt bovenaan op de pagina "Visie"'
+name: 'Korte Beschrijving Visie'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 400
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

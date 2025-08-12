@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 3a7559f6-57b6-4db7-b9ee-290137e78111 # Visie Inhoud
+handle: visie
+maxAuthors: 1
+name: Visie
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    enabledByDefault: true
+    hasUrls: true
+    template: visie/index.twig
+    uriFormat: visie
+type: single
