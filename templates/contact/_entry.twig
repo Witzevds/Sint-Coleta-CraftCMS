@@ -24,25 +24,25 @@
 						<p>(Geen adres ingesteld)</p>
 					{% endif %}
 					<hr>
-					<div>
-						<h3>Stuur ons een bericht</h3>
-						<p>Maakt niet uit of je een vraag of hulp nodig hebt twijfel niet om ons te contacteren.</p>
 
-						<div class="contact-information__phone">
-							<div class="icon-wrap">
-								<img src="/assets/icons/phone.svg" alt="">
-								<p>{{entry.telefoonnummerContactPagina}}</p>
-							</div>
+					<h3>Stuur ons een bericht</h3>
+					<p>Maakt niet uit of je een vraag of hulp nodig hebt twijfel niet om ons te contacteren.</p>
 
+					<div class="contact-information__phone">
+						<div class="icon-wrap">
+							<img src="/assets/icons/phone.svg" alt="">
+							<p>{{entry.telefoonnummerContactPagina}}</p>
 						</div>
 
-						<div class="contact-information__mail">
-							<div class="icon-wrap">
-								<img src="/assets/icons/mail.svg" alt="">
-								<p>{{entry.eMailadresContactPagina}}</p>
-							</div>
+					</div>
 
+					<div class="contact-information__mail">
+						<div class="icon-wrap">
+							<img src="/assets/icons/mail.svg" alt="">
+							<p>{{entry.eMailadresContactPagina}}</p>
 						</div>
+
+
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@
 					{{ csrfInput() }}
 					{{ actionInput('contact-form/send') }}
 
-					<label>Full name
+					<label>Volledige Naam
 						<input type="text" name="fromName" required value="{{ s.fromName ?? '' }}">
 					</label>
 
@@ -71,11 +71,11 @@
 						<input type="email" name="fromEmail" required value="{{ s.fromEmail ?? '' }}">
 					</label>
 
-					<label>Your message
+					<label>Jouw bericht
 						<textarea name="message" rows="6" required>{{ s.message ?? s.message.body ?? '' }}</textarea>
 					</label>
 
-					<button type="submit">Send message</button>
+					<button class="small-btn" type="submit">Send message</button>
 				</form>
 			{% endif %}
 		</div>

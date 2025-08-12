@@ -2,8 +2,20 @@
   display: flex;
   width: 80%;
   margin: 0 auto;
+  gap: 2rem;
+  height: 70vh;
+  align-items: center;
+
   & .contact-information {
+    display: flex;
+    flex-direction: column;
     width: 50%;
+
+    & .contact-information__text {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
   }
 
   & .contact-form {
@@ -14,6 +26,8 @@
 
     & input,
     textarea {
+      border-radius: 0.7rem;
+      border: 1px lightgrey solid;
       width: 100%;
     }
   }
