@@ -1,0 +1,15 @@
+.visie {
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: center;
+  height: 110vh;
+  align-items: center;
+
+  & .visie-text {
+    width: 70%;
+    border-radius: 1rem;
+    padding: 2rem;
+    height: 90%;
+    background-color: white;
+  }
+}

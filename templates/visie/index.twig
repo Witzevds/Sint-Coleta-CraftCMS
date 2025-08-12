@@ -1,7 +1,15 @@
 {% extends "base/base.twig" %}
 
 {% block content %}
-	<h1>{{entry.title}}</h1>
-	<p>{{entry.shortTextVisie}}</p>
-	<p>{{entry.fullTextVisie}}</p>
+	<div class="visie">
+		<div class="visie-text">
+			<h1>{{entry.title}}</h1>
+			<p>{{entry.shortTextVisie}}</p>
+			<p>{{entry.fullTextVisie}}</p>
+
+		</div>
+
+
+	</div>
+
 {% endblock %}
