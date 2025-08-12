@@ -1,0 +1,31 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 62f2e66d-b36e-4440-b1d5-4b95ee36d304 # Navigatie item
+handle: hoofdnavigatie
+maxAuthors: 1
+name: Hoofdnavigatie
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    enabledByDefault: true
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: d76d9b86-e2cf-4fda-bc41-0bb75649f2e2
+type: structure

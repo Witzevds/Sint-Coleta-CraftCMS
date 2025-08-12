@@ -1,4 +1,4 @@
-dateModified: 1754996070
+dateModified: 1754999021
 email:
   fromEmail: witzevds@gmail.com
   fromName: 'Sint Coleta'
@@ -16,6 +16,7 @@ meta:
     0d452ea6-0567-4eba-8592-8634410ff783: Vacatures # Vacatures
     0e119e6d-c6ae-45ff-9585-a9041b892638: 'Site Instellingen' # Site Instellingen
     0f91a800-a625-4178-946b-af5999e61eb2: 'Icons ' # Icons 
+    1cd14ab9-f226-4716-a2eb-5a51aa1f91c1: 'Vacature indexpagina' # Vacature indexpagina
     1dd476be-3970-46ab-b357-210d3bb2f245: Visie # Visie
     1f2afb75-6a53-471d-877e-4a42c92b3dcb: Publicaties # Publicaties
     2d6ae19c-b9df-4bed-b399-cb507e9716c9: 'Publicatie Datum' # Publicatie Datum
@@ -27,6 +28,7 @@ meta:
     5c6b1017-557e-48c6-8e02-c649452f5578: 'Korte Uitleg Diensten' # Korte Uitleg Diensten
     6f02beaa-17a0-4a9c-a32d-fbe673c00b5e: Default # Default
     7a19be51-2e75-477b-b593-bfdf3fd6de08: 'Sint Coleta' # Sint Coleta
+    7fd8bc53-fb22-4c72-a07b-c7b695e5facb: Link # Link
     8abe2a0f-01dc-4a66-946f-6aa5dac56c2f: ProfielFoto # ProfielFoto
     8e365b63-4ad9-484f-aa57-e3158a8236cd: Telefoonnummer # Telefoonnummer
     9b0816f1-7b84-422f-98e3-26af5e73b209: 'Care Images' # Care Images
@@ -35,6 +37,7 @@ meta:
     9fd78c8c-94e2-4ab2-bb3f-bd51f6b2f071: Contact # Contact
     46a82c05-b280-4758-b103-678657b0c47a: 'Prijslijst Dienst' # Prijslijst Dienst
     58e777c7-7b12-4f64-a700-1534629200d6: 'Externe Link Dienst' # Externe Link Dienst
+    62f2e66d-b36e-4440-b1d5-4b95ee36d304: 'Navigatie item' # Navigatie item
     064d3812-0b36-46ad-8dca-3d7ae5861b0f: 'Project Images' # Project Images
     73c11b7a-b599-43c3-915f-d33cc7a9a076: 'Sint Coleta' # Sint Coleta
     90ddb4bc-c04f-427c-a2cd-d2087eef1ad1: Dienstverlening # Dienstverlening
@@ -83,6 +86,7 @@ meta:
     f9c980ce-ffb1-492b-8828-a605e53046be: 'Volledige Omschrijving Vacature' # Volledige Omschrijving Vacature
     f344656f-f92a-4a7f-b55f-74800de51ab5: 'Price List' # Price List
     fb5dbd1b-702f-4939-a225-896b4cfd118e: Forms # Forms
+    fc3b457a-4f30-4026-bdab-ce0e7ae3ed8e: Hoofdnavigatie # Hoofdnavigatie
     fe95ca45-6a84-49d5-80fc-ca7a9769aee4: Favicons # Favicons
 plugins:
   ckeditor:

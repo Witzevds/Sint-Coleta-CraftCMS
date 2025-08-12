@@ -10,16 +10,21 @@
 		{% endif %}
 	</div>
 
+	{% set menuItems = craft.entries().section('hoofdnavigatie').all() %}
 	<nav class="header-nav">
-		<a class="header-nav__link" href="{{ url('vacatures') }}">Vacatures</a>
-		<a class="header-nav__link" href="{{ url('algemeen') }}">Algemene Info</a>
-		<a class="header-nav__link" href="{{ url('ouderen-zorg') }}">Residentiële Ouderenzorg</a>
-		<a class="header-nav__link" href="{{ url('dienstverlening') }}">Dienstverlening</a>
+		{% if menuItems|length %}
+			{% for item in menuItems %}
+				<a class="header-nav__link" href="{{ item.navLink }}">{{ item.title }}</a>
+			{% endfor %}
+		{% else %}
+			<a class="header-nav__link" href="{{ url('vacatures') }}">Vacatures</a>
+			<a class="header-nav__link" href="{{ url('algemeen') }}">Algemene Info</a>
+			<a class="header-nav__link" href="{{ url('ouderen-zorg') }}">Residentiële Ouderenzorg</a>
+			<a class="header-nav__link" href="{{ url('dienstverlening') }}">Dienstverlening</a>
+		{% endif %}
 	</nav>
 
 	<div class="header-contact">
-
 		<a class="header-contact__btn" href="{{ url('contact') }}">Contact</a>
-
 	</div>
 </header>

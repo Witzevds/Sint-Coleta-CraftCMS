@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: navigatieLink
+instructions: 'Hier komt de link naar je pagina'
+name: Link
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: /home
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
