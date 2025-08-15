@@ -1,6 +1,24 @@
 {% extends "base/base.twig" %}
 
 {% block content %}
+
+	{% if entry.heroHomeTitle %}
+		<div class="hero">
+			<div class="hero-container">
+				<h2 class="hero-container__title">
+					{{ entry.heroHomeTitle}}
+				</h2>
+				<p class="hero-container__sub">
+					{{ entry.heroHomeSubTitle}}
+				</p>
+
+			</div>
+
+		</div>
+
+	{% endif %}
+
+
 	{# Intro uit de Home-entry #}
 	{% if entry.introtekst %}
 		<section class="home-intro">

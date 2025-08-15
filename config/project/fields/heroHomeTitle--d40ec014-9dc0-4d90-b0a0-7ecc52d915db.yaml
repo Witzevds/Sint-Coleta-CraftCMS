@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: heroHomeTitle
+instructions: 'This the title showing on the home page'
+name: 'Hero Home Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 100
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'WZC Sint-Coleta'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

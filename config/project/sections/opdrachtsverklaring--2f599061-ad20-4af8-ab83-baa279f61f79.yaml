@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 58db42b6-b832-44a7-830b-00e676b7006a # OpdrachtsverklaringEntry
+handle: opdrachtsverklaring
+maxAuthors: 1
+name: Opdrachtsverklaring
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  7a19be51-2e75-477b-b593-bfdf3fd6de08: # Sint Coleta
+    enabledByDefault: true
+    hasUrls: true
+    template: opdrachtsverklaring/index.twig
+    uriFormat: opdrachtsverklaring
+type: single

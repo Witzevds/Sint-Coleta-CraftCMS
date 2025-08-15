@@ -1,17 +1,47 @@
-color: cyan
+color: null
 description: null
 fieldLayouts:
-  e6694100-acc8-474a-a220-471cd196e610:
+  ee326f40-21af-4e6f-98a8-8093825eb613:
     cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
         elements:
           -
-            dateAdded: '2025-08-08T18:22:19+00:00'
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-08-12T15:29:40+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 2f0a0250-37e7-46fd-af0c-aac0b4c67853
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-08-12T15:31:08+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: 97a473e1-4261-4239-b327-48b29cec72c7 # IntroTekst
+            fieldUid: a283a7f9-9cff-4714-a573-af42f5ecdfa2 # Korte Beschrijving Visie
             handle: null
             includeInCards: false
             instructions: null
@@ -20,32 +50,15 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 21c12995-1191-4408-bb18-bb8464bc0750
+            uid: 049d86e2-c9e1-4102-ab91-f4b71832e9e9
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2025-08-15T08:29:16+00:00'
+            dateAdded: '2025-08-12T15:31:08+00:00'
             editCondition: null
             elementCondition: null
-            fieldUid: d40ec014-9dc0-4d90-b0a0-7ecc52d915db # Hero Home Title
-            handle: null
-            includeInCards: false
-            instructions: 'Dit is de titel die getoond word in de hero op de home pagina'
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: cf7f0c86-a270-4c42-9273-b48bd5db6704
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            dateAdded: '2025-08-15T08:29:16+00:00'
-            editCondition: null
-            elementCondition: null
-            fieldUid: ba4b863f-a47d-47e3-8bf1-60624e6fcee6 # Hero Home Sub Title
+            fieldUid: adb59983-1f59-4105-9b31-ab9ddcb2bf92 # Volledige Text van de pagina
             handle: null
             includeInCards: false
             instructions: null
@@ -54,17 +67,17 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 27716743-28c3-45cc-9875-05a9efd4e8d1
+            uid: 706a1e65-9298-484d-aab7-7c190bd83889
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 8525ee0c-33d7-40c8-abb0-37f98c97feb6
+        uid: 44eaf9c8-ce5c-4741-9e36-d41f5c484cdf
         userCondition: null
-handle: homepage
-hasTitleField: false
-icon: house
-name: Homepage
+handle: opdrachtsverklaringentry
+hasTitleField: true
+icon: null
+name: OpdrachtsverklaringEntry
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

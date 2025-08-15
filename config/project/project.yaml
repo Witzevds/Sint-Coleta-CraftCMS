@@ -1,4 +1,4 @@
-dateModified: 1755006769
+dateModified: 1755246556
 email:
   fromEmail: witzevds@gmail.com
   fromName: 'Sint Coleta'
@@ -20,6 +20,7 @@ meta:
     1dd476be-3970-46ab-b357-210d3bb2f245: Visie # Visie
     1f2afb75-6a53-471d-877e-4a42c92b3dcb: Publicaties # Publicaties
     2d6ae19c-b9df-4bed-b399-cb507e9716c9: 'Publicatie Datum' # Publicatie Datum
+    2f599061-ad20-4af8-ab83-baa279f61f79: Opdrachtsverklaring # Opdrachtsverklaring
     3a7559f6-57b6-4db7-b9ee-290137e78111: 'Visie Inhoud' # Visie Inhoud
     3d13f122-2913-44eb-a64a-bac4901ababc: Dienst # Dienst
     3dee15d5-6575-49ec-b1ee-f82825f048ec: 'Ouderen Zorg' # Ouderen Zorg
@@ -36,6 +37,7 @@ meta:
     9e7e2739-6927-48cb-8555-72302fed359f: 'Korte Beschrijving Vacature' # Korte Beschrijving Vacature
     9fd78c8c-94e2-4ab2-bb3f-bd51f6b2f071: Contact # Contact
     46a82c05-b280-4758-b103-678657b0c47a: 'Prijslijst Dienst' # Prijslijst Dienst
+    58db42b6-b832-44a7-830b-00e676b7006a: OpdrachtsverklaringEntry # OpdrachtsverklaringEntry
     58e777c7-7b12-4f64-a700-1534629200d6: 'Externe Link Dienst' # Externe Link Dienst
     62f2e66d-b36e-4440-b1d5-4b95ee36d304: 'Navigatie item' # Navigatie item
     064d3812-0b36-46ad-8dca-3d7ae5861b0f: 'Project Images' # Project Images
@@ -67,12 +69,14 @@ meta:
     b91fc340-8606-4546-a404-7e74d51a9d74: 'Externe Link Vacature' # Externe Link Vacature
     b48664c1-0875-4182-b95a-6f06a9b76311: 'Openingsuren Contact Pagina' # Openingsuren Contact Pagina
     b873181b-19da-40b0-8224-de69fb273175: 'Informatieve Pagina' # Informatieve Pagina
+    ba4b863f-a47d-47e3-8bf1-60624e6fcee6: 'Hero Home Sub Title' # Hero Home Sub Title
     bf2acec6-c1bd-4ccb-9343-f00aabd21868: 'Inhoud Extra Paginas' # Inhoud Extra Paginas
     c4bd26f8-9b88-42e9-af8d-3d8069110533: 'Publicatie Type' # Publicatie Type
     c54651e8-c41e-43e4-abac-4fe49424d135: Homepage # Homepage
     cd11f59a-8fea-4354-8412-9e9e3bbd5044: Naam # Naam
     d1df8b1e-5f4a-4e3c-b535-615a3372a2a2: Functie # Functie
     d12a1b7e-9581-4a7e-9c13-4093428236b4: 'Publicatie Types' # Publicatie Types
+    d40ec014-9dc0-4d90-b0a0-7ecc52d915db: 'Hero Home Title' # Hero Home Title
     e0b6cdfb-149c-4295-af01-c3934305ac6f: 'Staff Photos' # Staff Photos
     e1a81ce8-47e8-4ce9-88f0-44140d478aca: 'Openingsuren dienst' # Openingsuren dienst
     e9d9ed4b-05f3-487a-a727-c3217546dc7e: 'Contact Persoon Vacature' # Contact Persoon Vacature
