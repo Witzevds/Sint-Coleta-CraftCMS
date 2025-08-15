@@ -3,7 +3,8 @@
 {% block content %}
 
 	{% if entry.heroHomeTitle %}
-		<div class="hero">
+		{% set heroAsset = entry.heroHomeAfbeelding.one() %}
+		<div class="hero" {% if heroAsset %} style="background-image:url('{{ heroAsset.url }}')" {% endif %}>
 			<div class="hero-container">
 				<h2 class="hero-container__title">
 					{{ entry.heroHomeTitle}}
@@ -11,11 +12,12 @@
 				<p class="hero-container__sub">
 					{{ entry.heroHomeSubTitle}}
 				</p>
-
+				<div class="hero-container__buttons">
+					<a href="/dienstverlening" class="hero-container__buttons--left">Onze diensten</a>
+					<a href="/contact" class="hero-container__buttons--right">Contact</a>
+				</div>
 			</div>
-
 		</div>
-
 	{% endif %}
 
 
@@ -34,15 +36,12 @@
 
 		<ul>
 			{% for dienst in dienstverlening %}
-
 				<li>
 					<p>{{dienst.title}}</p>
 					<p>{{dienst.korteUitlegDiensten}}</p>
 					<a href="{{ dienst.getUrl() }}">Meer informatie</a>
 				</li>
-
 			{% endfor %}
-
 		</ul>
 	</section>
 
@@ -54,6 +53,7 @@
 			{% for z in zorg %}
 				<li>
 					<a href="{{ z.getUrl() }}">{{ z.title }}</a>
+
 				</li>
 			{% else %}
 				<li>Geen pagina’s.</li>
