@@ -1,6 +1,38 @@
 {% extends "base/base.twig" %}
 
 {% block content %}
-	Dit is de pagina voor de werknemers
+	<section class="werknemers-overzicht">
+		<h1>Ons team</h1>
 
+		{% set medewerkers = craft.entries().section('werknemers').orderBy('title asc').all() %}
+
+		{% if medewerkers|length %}
+			<ul class="werknemers-grid">
+				{% for m in medewerkers %}
+					<li class="werknemer-card">
+						{% set foto = m.profielfoto.one() %}
+						{% if foto %}
+							<img class="werknemer-card__foto" src="{{ foto.url }}" alt="{{ m.title }}">
+						{% endif %}
+
+						<h3 class="werknemer-card__naam">{{ m.title }}</h3>
+						{% if m.functie %}
+							<p class="werknemer-card__functie">{{ m.functie.one().title ?? m.functie }}</p>
+						{% endif %}
+						{% if m.uitlegRol %}
+							<p class="werknemer-card__uitleg">{{ m.uitlegRol }}</p>
+						{% endif %}
+
+						<p class="werknemer-card__links">
+							{% if m.eMailadres %}
+								<a href="mailto:{{ m.eMailadres }}">E-mail</a>
+							{% endif %}
+						</p>
+					</li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>Geen werknemers gevonden.</p>
+		{% endif %}
+	</section>
 {% endblock %}
