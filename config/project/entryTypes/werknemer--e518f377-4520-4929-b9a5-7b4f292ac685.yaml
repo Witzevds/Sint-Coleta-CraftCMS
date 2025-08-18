@@ -3,6 +3,8 @@ description: 'Naam van medewerker'
 fieldLayouts:
   4cdd3ea3-286d-478b-9257-2c64ace9bc4c:
     cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:481727b4-4992-4778-84f2-2b33177411fb'
     tabs:
       -
         elementCondition: null
@@ -30,7 +32,7 @@ fieldLayouts:
             elementCondition: null
             fieldUid: d1df8b1e-5f4a-4e3c-b535-615a3372a2a2 # Functie
             handle: null
-            includeInCards: false
+            includeInCards: true
             instructions: null
             label: null
             providesThumbs: false

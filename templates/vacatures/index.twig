@@ -1,19 +1,46 @@
 {% extends "base/base.twig" %}
 
+{% block pageStyles %}
+	<link rel="stylesheet" href="{{ url('assets/css/pages/vacatures.css') }}">
+{% endblock %}
+
 {% block content %}
-	<h1>Vacatures</h1>
-	{% set vacatures = craft.entries().section('vacatures').orderBy('postDate desc').all() %}
-	<ul>
-		{% for v in vacatures %}
-			<li>
-				<h2>{{ v.title }}</h2>
-				{% if v.korteBeschrijvingVacature %}
-					<p>{{ v.korteBeschrijvingVacature }}</p>
-				{% endif %}
-				<a href="{{ v.url }}">Bekijk vacature</a>
-			</li>
+	<section class="vacatures-overzicht">
+		<h1>Vacatures</h1>
+		{% set vacatures = craft.entries().section('vacatures').orderBy('postDate desc').all() %}
+		{% if vacatures|length %}
+			<ul class="vacatures-grid">
+				{% for v in vacatures %}
+					<li class="vacature-card">
+						<h2 class="vacature-card__title">{{ v.title }}</h2>
+						{% if v.korteBeschrijvingVacature %}
+							<p class="vacature-card__uitleg">{{ v.korteBeschrijvingVacature }}</p>
+						{% endif %}
+						{% set fun = v.functie.one() %}
+						{% if fun %}
+							<p class="vacature-card__functie">Functie:
+								{{ fun.title }}</p>
+						{% endif %}
+						{% set contact = v.contactPersoonVacature.one() %}
+						{% if contact %}
+							<p class="vacature-card__contact">Contactpersoon:
+								{{ contact.title }}
+								{% if contact.eMailadres %}
+									(<a href="mailto:{{ contact.eMailadres }}">{{ contact.eMailadres }}</a>)
+								{% endif %}
+							</p>
+						{% endif %}
+						{% if v.externeLinkVacature and v.externeLinkVacature.url %}
+							<p class="vacature-card__extern">
+								<a href="{{ v.externeLinkVacature.url }}" target="_blank" rel="noopener">Externe link</a>
+							</p>
+						{% endif %}
+						<a class="vacature-card__cta" href="{{ v.url }}">Bekijk vacature</a>
+					</li>
+				{% endfor %}
+			</ul>
 		{% else %}
-			<li>Geen vacatures gevonden.</li>
-		{% endfor %}
-	</ul>
+			<p>Geen vacatures gevonden.</p>
+		{% endif %}
+	</section>
 {% endblock %}

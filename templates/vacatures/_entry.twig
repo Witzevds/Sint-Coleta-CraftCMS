@@ -1,29 +1,47 @@
 {% extends "base/base.twig" %}
 
+{% block pageStyles %}
+	<link rel="stylesheet" href="{{ url('assets/css/pages/vacatures.css') }}">
+{% endblock %}
+
 {% block content %}
-	<article>
-		<h1>{{ entry.title }}</h1>
-
+	<section class="vacature-detail">
+		<h1 class="vacature-detail__title">{{ entry.title }}</h1>
 		{% if entry.korteBeschrijvingVacature %}
-			<p>{{ entry.korteBeschrijvingVacature }}</p>
+			<p class="vacature-detail__uitleg">{{ entry.korteBeschrijvingVacature }}</p>
 		{% endif %}
-
 		{% if entry.publicatieDatum %}
-			<p>
+			<p class="vacature-detail__datum">
 				<small>Gepubliceerd op
 					{{ entry.publicatieDatum|date('d-m-Y') }}</small>
 			</p>
 		{% elseif entry.postDate %}
-			<p>
+			<p class="vacature-detail__datum">
 				<small>Gepubliceerd op
 					{{ entry.postDate|date('d-m-Y') }}</small>
 			</p>
 		{% endif %}
-
-		{% if entry.volledigeOmschrijvingVacature %}
-			<div>
-				{{ entry.volledigeOmschrijvingVacature }}
-			</div>
+		{% set fun = entry.functie.one() %}
+		{% if fun %}
+			<p class="vacature-detail__functie">Functie:
+				{{ fun.title }}</p>
 		{% endif %}
-	</article>
+		{% set contact = entry.contactPersoonVacature.one() %}
+		{% if contact %}
+			<p class="vacature-detail__contact">Contactpersoon:
+				{{ contact.title }}
+				{% if contact.eMailadres %}
+					(<a href="mailto:{{ contact.eMailadres }}">{{ contact.eMailadres }}</a>)
+				{% endif %}
+			</p>
+		{% endif %}
+		{% if entry.externeLinkVacature and entry.externeLinkVacature.url %}
+			<p class="vacature-detail__extern">
+				<a href="{{ entry.externeLinkVacature.url }}" target="_blank" rel="noopener">Link naar vacature</a>
+			</p>
+		{% endif %}
+		{% if entry.volledigeOmschrijvingVacature %}
+			<div class="vacature-detail__volledig">{{ entry.volledigeOmschrijvingVacature }}</div>
+		{% endif %}
+	</section>
 {% endblock %}
