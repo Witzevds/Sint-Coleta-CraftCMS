@@ -1,6 +1,31 @@
 {% extends "base/base.twig" %}
 
+{% block pageStyles %}
+	<link rel="stylesheet" href="{{ url('assets/css/pages/diensten.css') }}">
+{% endblock %}
 
 {% block content %}
-	<h1>Diensten Pagina</h1>
+	<section class="diensten-overzicht">
+		<h1>Onze diensten</h1>
+		{% set diensten = craft.entries().section('dienstverlening').orderBy('title asc').all() %}
+		{% if diensten|length %}
+			<ul class="diensten-grid">
+				{% for dienst in diensten %}
+					<li class="dienst-card">
+						{% set img = dienst.afbeelding.one() %}
+						{% if img %}
+							<img class="dienst-card__img" src="{{ img.url }}" alt="{{ dienst.title }}">
+						{% endif %}
+						<h2 class="dienst-card__title">{{ dienst.title }}</h2>
+						{% if dienst.korteUitlegDiensten %}
+							<p class="dienst-card__uitleg">{{ dienst.korteUitlegDiensten }}</p>
+						{% endif %}
+						<a class="dienst-card__cta" href="{{ dienst.getUrl() }}">Meer informatie</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>Geen diensten gevonden.</p>
+		{% endif %}
+	</section>
 {% endblock %}

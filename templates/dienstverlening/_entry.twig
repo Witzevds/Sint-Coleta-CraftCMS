@@ -1,0 +1,24 @@
+{% extends "base/base.twig" %}
+
+{% block pageStyles %}
+	<link rel="stylesheet" href="{{ url('assets/css/pages/diensten.css') }}">
+{% endblock %}
+
+{% block content %}
+	<section class="dienst-detail">
+		{% set img = entry.afbeelding is defined and entry.afbeelding ? entry.afbeelding.one() : null %}
+		{% if img %}
+			<img class="dienst-detail__img" src="{{ img.url }}" alt="{{ entry.title }}">
+		{% endif %}
+		<h1 class="dienst-detail__title">{{ entry.title }}</h1>
+		{% if entry.korteUitlegDiensten %}
+			<p class="dienst-detail__uitleg">{{ entry.korteUitlegDiensten }}</p>
+		{% endif %}
+		{% set pdf = entry.prijslijstDienst is defined and entry.prijslijstDienst ? entry.prijslijstDienst.one() : null %}
+		{% if pdf %}
+			<p class="dienst-detail__pdf">
+				<a href="{{ pdf.url }}" target="_blank" rel="noopener" class="dienst-card__cta">Bekijk of download prijslijst (PDF)</a>
+			</p>
+		{% endif %}
+	</section>
+{% endblock %}

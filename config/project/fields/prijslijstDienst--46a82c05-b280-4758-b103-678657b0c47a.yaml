@@ -8,17 +8,7 @@ settings:
   allowSubfolders: false
   allowUploads: true
   allowedKinds:
-    - audio
-    - captionsSubtitles
-    - compressed
-    - excel
-    - image
-    - json
-    - javascript
-    - powerpoint
-    - text
-    - video
-    - word
+    - pdf
   branchLimit: null
   defaultPlacement: end
   defaultUploadLocationSource: 'volume:f344656f-f92a-4a7f-b55f-74800de51ab5' # Price List

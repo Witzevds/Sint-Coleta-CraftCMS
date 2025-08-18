@@ -8,17 +8,7 @@ settings:
   allowSubfolders: false
   allowUploads: true
   allowedKinds:
-    - audio
-    - captionsSubtitles
-    - compressed
-    - excel
-    - json
-    - javascript
-    - pdf
-    - powerpoint
-    - text
-    - video
-    - word
+    - image
   branchLimit: null
   defaultPlacement: end
   defaultUploadLocationSource: 'volume:e0b6cdfb-149c-4295-af01-c3934305ac6f' # Staff Photos
