@@ -4,13 +4,23 @@ instructions: 'Beschrijf in enkele zinnen de rol of taken van deze medewerker.'
 name: 'Uitleg rol'
 searchable: false
 settings:
-  byteLimit: null
-  charLimit: 300
-  code: false
-  initialRows: 4
-  multiline: false
-  placeholder: 'vb. “Annemie staat in voor de begeleiding van bewoners met dementie…”'
-  uiMode: normal
+  availableTransforms: ''
+  availableVolumes: '*'
+  characterLimit: null
+  ckeConfig: 28329803-f84b-430a-a39d-a662c4cf2ec2 # Simple
+  createButtonLabel: null
+  defaultTransform: null
+  expandEntryButtons: false
+  fullGraphqlData: true
+  parseEmbeds: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  sourceEditingGroups:
+    - __ADMINS__
+  wordLimit: null
 translationKeyFormat: null
 translationMethod: none
-type: craft\fields\PlainText
+type: craft\ckeditor\Field

@@ -25,4 +25,7 @@ siteSettings:
     hasUrls: true
     template: werknemers/_entry.twig
     uriFormat: 'werknemers/{slug}'
-type: channel
+structure:
+  maxLevels: 1
+  uid: df60d59b-2b1a-46c4-8faa-d94187e9512c
+type: structure

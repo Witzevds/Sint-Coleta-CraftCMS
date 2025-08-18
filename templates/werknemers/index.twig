@@ -1,10 +1,47 @@
 {% extends "base/base.twig" %}
 
+{% block pageStyles %}
+	<link rel="stylesheet" href="{{ url('assets/css/pages/werknemers.css') }}">
+{% endblock %}
+
 {% block content %}
 	<section class="werknemers-overzicht">
 		<h1>Ons team</h1>
 
-		{% set medewerkers = craft.entries().section('werknemers').orderBy('title asc').all() %}
+		{% set functies = craft.categories().group('werknemersCategorieen').orderBy('title asc').all() %}
+
+		{% set selected = craft.app.request.getQueryParam('functie') ?? [] %}
+		{% if selected is not iterable %}
+			{% set selected = [selected] %}
+		{% endif %}
+
+		{% if functies|length %}
+			<form method="get" class="werknemers-filter">
+				<div class="werknemers-filter__group">
+					{% for f in functies %}
+						<label class="werknemers-filter__item">
+							<input type="checkbox" name="functie[]" value="{{ f.slug }}" {% if f.slug in selected %} checked {% endif %}>
+							<span>{{ f.title }}</span>
+						</label>
+					{% endfor %}
+				</div>
+				<div class="werknemers-filter__actions">
+					{% if selected|length %}
+						<a class="link-reset" href="{{ url(craft.app.request.pathInfo) }}">Reset</a>
+					{% endif %}
+				</div>
+			</form>
+		{% endif %}
+
+		{% set q = craft.entries().section('werknemers') %}
+		{% if selected|length %}
+			{% set selectedCats = craft.categories().group('werknemersCategorieen').slug(selected).all() %}
+			{% if selectedCats|length %}
+				{% set q = q.relatedTo({ field: 'functie', targetElement: selectedCats }) %}
+			{% endif %}
+		{% endif %}
+
+		{% set medewerkers = q.orderBy('title asc').all() %}
 
 		{% if medewerkers|length %}
 			<ul class="werknemers-grid">
@@ -13,11 +50,15 @@
 						{% set foto = m.profielfoto.one() %}
 						{% if foto %}
 							<img class="werknemer-card__foto" src="{{ foto.url }}" alt="{{ m.title }}">
+
+						{% else %}
+							<img class="werknemer-card__foto" src="assets/images/default-profile.png" alt="{{ m.title }}">
 						{% endif %}
 
 						<h3 class="werknemer-card__naam">{{ m.title }}</h3>
-						{% if m.functie %}
-							<p class="werknemer-card__functie">{{ m.functie.one().title ?? m.functie }}</p>
+						{% set fun = m.functie.one() %}
+						{% if fun %}
+							<p class="werknemer-card__functie">{{ fun.title }}</p>
 						{% endif %}
 						{% if m.uitlegRol %}
 							<p class="werknemer-card__uitleg">{{ m.uitlegRol }}</p>
@@ -35,4 +76,22 @@
 			<p>Geen werknemers gevonden.</p>
 		{% endif %}
 	</section>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+const form = document.querySelector('.werknemers-filter');
+if (! form) 
+return;
+
+
+
+form.addEventListener('change', (e) => {
+if (e.target.matches('input[type="checkbox"]')) 
+form.submit();
+
+
+
+});
+});
+	</script>
 {% endblock %}

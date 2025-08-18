@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: functie
-instructions: 'Geef hier de officiële functietitel van de medewerker.'
+instructions: 'Geef hier de overkoepelende naam van de functie zoals directie, sociale dienst etc...'
 name: Functie
 searchable: true
 settings:

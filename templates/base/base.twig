@@ -6,10 +6,9 @@
 
 		<title>{{ siteName }}</title>
 
-		{# Global set laden voor favicon & logo #}
+
 		{% set siteSettings = craft.globalSets().handle('siteInstellingen').one() %}
 
-		{# Favicons tonen als die bestaat #}
 		{% if siteSettings and siteSettings.favicons|length %}
 			{% set favicons = siteSettings.favicons.one() %}
 			<link rel="icon" type="{{ favicons.mimeType }}" href="{{ favicons.url }}">
@@ -20,7 +19,6 @@
 		<link rel="stylesheet" href="{{ url('assets/css/fonts.css') }}">
 		<link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
 
-
 	</head>
 	<body>
 		{% include 'partials/_header.twig' %}
@@ -28,5 +26,7 @@
 		<main>
 			{% block content %}{% endblock %}
 		</main>
+
+		{% include "partials/_footer.twig" %}
 	</body>
 </html>

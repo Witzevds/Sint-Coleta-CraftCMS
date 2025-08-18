@@ -1,9 +1,23 @@
 <footer>
-	<ul>
-		<li></li>
-		<li></li>
-
-	</ul>
 
 
+	<div class="footer-img">
+		{% if siteSettings and siteSettings.siteLogo|length %}
+			{% set logo = siteSettings.siteLogo.one() %}
+			<a href="{{ siteUrl('') }}">
+				<img src="{{ logo.url }}" alt="Logo {{ siteName }}">
+			</a>
+		{% else %}
+			<a href="{{ siteUrl('') }}">{{ siteName }}</a>
+		{% endif %}
+	</div>
+
+	{% set menuItems = craft.entries().section('hoofdnavigatie').all() %}
+	<nav class="footer-nav">
+		{% if menuItems|length %}
+			{% for item in menuItems %}
+				<a class="footer-nav__link" href="{{ item.navLink }}">{{ item.title }}</a>
+			{% endfor %}
+		{% endif %}
+	</nav>
 </footer>
