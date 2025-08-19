@@ -8,13 +8,16 @@
 	<section class="werknemers-overzicht">
 		<h1>Ons team</h1>
 
+		{# 1) Haal lijst van functies (categorieën) op #}
 		{% set functies = craft.categories().group('werknemersCategorieen').orderBy('title asc').all() %}
 
+		{# 2) Lees de geselecteerde filters uit de URL en zorg dat het altijd een array is #}
 		{% set selected = craft.app.request.getQueryParam('functie') ?? [] %}
 		{% if selected is not iterable %}
 			{% set selected = [selected] %}
 		{% endif %}
 
+		{# 3) Filter-formulier met checkboxen per functie #}
 		{% if functies|length %}
 			<form method="get" class="werknemers-filter">
 				<div class="werknemers-filter__group">
@@ -33,6 +36,7 @@
 			</form>
 		{% endif %}
 
+		{# 4) Bouw de query op en pas filter toe indien nodig #}
 		{% set q = craft.entries().section('werknemers') %}
 		{% if selected|length %}
 			{% set selectedCats = craft.categories().group('werknemersCategorieen').slug(selected).all() %}
@@ -41,18 +45,21 @@
 			{% endif %}
 		{% endif %}
 
+		{# 5) Haal de medewerkers op (alfabetisch) #}
 		{% set medewerkers = q.orderBy('title asc').all() %}
 
+		{# 6) Toon de kaarten #}
 		{% if medewerkers|length %}
 			<ul class="werknemers-grid">
 				{% for m in medewerkers %}
-					<li class="werknemer-card">
+					<li
+						class="werknemer-card">
+						{# Foto met fallback #}
 						{% set foto = m.profielfoto.one() %}
 						{% if foto %}
 							<img class="werknemer-card__foto" src="{{ foto.url }}" alt="{{ m.title }}">
-
 						{% else %}
-							<img class="werknemer-card__foto" src="assets/images/default-profile.png" alt="{{ m.title }}">
+							<img class="werknemer-card__foto" src="{{ url('assets/images/default-profile.png') }}" alt="{{ m.title }}">
 						{% endif %}
 
 						<h3 class="werknemer-card__naam">{{ m.title }}</h3>
@@ -77,6 +84,7 @@
 		{% endif %}
 	</section>
 
+	{# 7) Kleine JS: autosubmit het formulier zodra je een checkbox wijzigt #}
 	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 const form = document.querySelector('.werknemers-filter');
@@ -84,11 +92,9 @@ if (! form)
 return;
 
 
-
 form.addEventListener('change', (e) => {
 if (e.target.matches('input[type="checkbox"]')) 
 form.submit();
-
 
 
 });

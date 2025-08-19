@@ -1,0 +1,129 @@
+/* Container */
+.projecten-overzicht {
+  width: 80%;
+  margin: 2rem auto 4rem;
+}
+.projecten-overzicht h1 {
+  text-align: center;
+  margin: 0 0 2rem;
+}
+
+/* Grid */
+.projecten-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: stretch; /* cards vullen de hoogte van de rij */
+}
+
+/* Kaartje */
+.project-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 18px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.15s, transform 0.15s;
+  height: 100%; /* maak kaarten even hoog per rij */
+}
+.project-card:hover {
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+  transform: translateY(-2px);
+}
+.project-card__logo {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+.project-card__title {
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0;
+  text-align: center;
+  color: #ee7919;
+}
+.project-card__uitleg {
+  margin: 0;
+  opacity: 0.85;
+  text-align: center;
+}
+.project-card__cta {
+  margin-top: auto; /* duw knop naar onderkant van de kaart */
+  background: #ee7919;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1.1rem;
+  border-radius: 0.8rem;
+  font-weight: 600;
+  display: inline-block;
+}
+.project-card__cta:hover {
+  background: #cab37f;
+  color: #000;
+}
+
+/* Detail */
+.project-detail {
+  width: 80%;
+  margin: 2rem auto 4rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+  padding: 2.2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.project-detail__logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+.project-detail__title {
+  font-size: 2rem;
+  margin: 0 0 0.5rem;
+  text-align: center;
+  color: #ee7919;
+}
+.project-detail__intro {
+  font-size: 1.05rem;
+  opacity: 0.85;
+  text-align: center;
+  margin: 0 0 0.5rem;
+}
+.project-detail__body {
+  max-width: 760px;
+  line-height: 1.65;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .projecten-overzicht {
+    width: 90%;
+  }
+  .projecten-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .project-detail {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .projecten-overzicht {
+    width: 94%;
+  }
+  .projecten-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-detail {
+    width: 96%;
+    padding: 1.2rem 0.7rem;
+  }
+}

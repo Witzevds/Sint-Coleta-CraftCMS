@@ -1,94 +1,65 @@
 {% extends "base/base.twig" %}
 
 {% block pageStyles %}
-  <link rel="stylesheet" href="{{ url('assets/css/pages/home.css') }}">
+	<link rel="stylesheet" href="{{ url('assets/css/pages/home.css') }}">
 {% endblock %}
 
 {% block content %}
 
-  {% if entry.heroHomeTitle %}
-    {% set heroAsset = entry.heroHomeAfbeelding.one() %}
-    <div class="hero" {% if heroAsset %} style="background-image:url('{{ heroAsset.url }}')" {% endif %}>
-      <div class="hero-container">
-        <h2 class="hero-container__title">{{ entry.heroHomeTitle }}</h2>
-        <p class="hero-container__sub">{{ entry.heroHomeSubTitle }}</p>
-        <div class="hero-container__buttons">
-          <a href="{{ url('dienstverlening') }}" class="hero-container__buttons--left">Onze diensten</a>
-          <a href="{{ url('contact') }}" class="hero-container__buttons--right">Contact</a>
-        </div>
-      </div>
-    </div>
-  {% endif %}
+	{% if entry.heroHomeTitle %}
+		{% set heroAsset = entry.heroHomeAfbeelding.one() %}
+		<div class="hero" {% if heroAsset %} style="background-image:url('{{ heroAsset.url }}')" {% endif %}>
+			<div class="hero-container">
+				<h2 class="hero-container__title">{{ entry.heroHomeTitle }}</h2>
+				<p class="hero-container__sub">{{ entry.heroHomeSubTitle }}</p>
+				<div class="hero-container__buttons">
+					<a href="{{ url('dienstverlening') }}" class="hero-container__buttons--left">Onze diensten</a>
+					<a href="{{ url('contact') }}" class="hero-container__buttons--right">Contact</a>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+	{# Dienstverlening overzicht #}
+	<section class="home-section home-diensten">
+		<h2>Dienstverlening</h2>
+		{% set dienstverlening = craft.entries().section('dienstverlening').limit(6).all() %}
+		{% if dienstverlening|length %}
+			<ul class="home-grid">
+				{% for dienst in dienstverlening %}
+					<li class="home-card">
+						<h3 class="home-card__title">{{ dienst.title }}</h3>
+						{% if dienst.korteUitlegDiensten %}
+							<p class="home-card__text">{{ dienst.korteUitlegDiensten }}</p>
+						{% endif %}
+						<a class="btn" href="{{ dienst.getUrl() }}">Meer informatie</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% endif %}
+	</section>
 
-  {# Intro uit de Home-entry #}
-  {% if entry.introtekst %}
-    <section class="home-section home-intro">
-      {{ entry.introtekst }}
-    </section>
-  {% endif %}
-
-  {# Dienstverlening overzicht #}
-  <section class="home-section home-diensten">
-    <h2>Dienstverlening</h2>
-    {% set dienstverlening = craft.entries().section('dienstverlening').limit(6).all() %}
-    {% if dienstverlening|length %}
-      <ul class="home-grid">
-        {% for dienst in dienstverlening %}
-          <li class="home-card">
-            <h3 class="home-card__title">{{ dienst.title }}</h3>
-            {% if dienst.korteUitlegDiensten %}
-              <p class="home-card__text">{{ dienst.korteUitlegDiensten }}</p>
-            {% endif %}
-            <a class="btn" href="{{ dienst.getUrl() }}">Meer informatie</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  </section>
-
-  {# Residentiële ouderenzorg overzicht #}
-  <section class="home-section home-ouderen-zorg">
-    <h2>Residentiële ouderenzorg</h2>
-    {% set zorg = craft.entries().section('ouderenZorg').limit(3).all() %}
-    {% if zorg|length %}
-      <ul class="home-grid">
-        {% for z in zorg %}
-          <li class="home-card">
-            <h3 class="home-card__title">{{ z.title }}</h3>
-            <a class="btn btn--secondary" href="{{ z.getUrl() }}">Lees meer</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <p>Geen pagina’s.</p>
-    {% endif %}
-    <p class="home-section__more">
-      <a class="btn" href="{{ url('ouderen-zorg') }}">Meer over ouderenzorg</a>
-    </p>
-  </section>
-
-  {# Vacatures overzicht #}
-  <section class="home-section home-vacatures">
-    <h2>Vacatures</h2>
-    {% set vacatures = craft.entries().section('vacatures').orderBy('postDate desc').limit(3).all() %}
-    {% if vacatures|length %}
-      <ul class="home-grid">
-        {% for v in vacatures %}
-          <li class="home-card">
-            <h3 class="home-card__title">{{ v.title }}</h3>
-            {% if v.korteBeschrijvingVacature %}
-              <p class="home-card__text">{{ v.korteBeschrijvingVacature }}</p>
-            {% endif %}
-            <a class="btn" href="{{ v.getUrl() }}">Bekijk vacature</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% else %}
-      <p>Momenteel geen vacatures.</p>
-    {% endif %}
-    <p class="home-section__more">
-      <a class="btn btn--secondary" href="{{ url('vacatures') }}">Alle vacatures</a>
-    </p>
-  </section>
+	{# Vacatures overzicht #}
+	<section class="home-section home-vacatures">
+		<h2>Vacatures</h2>
+		{% set vacatures = craft.entries().section('vacatures').orderBy('postDate desc').limit(3).all() %}
+		{% if vacatures|length %}
+			<ul class="home-grid">
+				{% for v in vacatures %}
+					<li class="home-card">
+						<h3 class="home-card__title">{{ v.title }}</h3>
+						{% if v.korteBeschrijvingVacature %}
+							<p class="home-card__text">{{ v.korteBeschrijvingVacature }}</p>
+						{% endif %}
+						<a class="btn" href="{{ v.getUrl() }}">Bekijk vacature</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>Momenteel geen vacatures.</p>
+		{% endif %}
+		<p class="home-section__more">
+			<a class="btn btn--secondary" href="{{ url('vacatures') }}">Alle vacatures</a>
+		</p>
+	</section>
 
 {% endblock %}

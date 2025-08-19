@@ -105,6 +105,35 @@
   max-width: 700px;
 }
 
+/* Extra blokken op detailpagina */
+.dienst-detail__openingsuren {
+  width: 100%;
+  max-width: 700px;
+}
+.dienst-detail__openingsuren h2 {
+  margin: 0.2rem 0 0.3rem;
+  color: #cab37f;
+  text-align: center;
+}
+.dienst-detail__openingsuren p {
+  white-space: pre-wrap;
+  text-align: center;
+  margin: 0;
+}
+.dienst-detail__actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0.5rem 0 0;
+}
+.dienst-card__cta--secondary {
+  background: #cab37f;
+}
+.dienst-card__cta--secondary:hover {
+  filter: brightness(0.95);
+}
+
 @media (max-width: 1000px) {
   .diensten-overzicht {
     width: 90%;

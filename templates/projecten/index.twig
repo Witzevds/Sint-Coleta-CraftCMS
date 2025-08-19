@@ -1,0 +1,28 @@
+{% extends "base/base.twig" %}
+
+
+{% block content %}
+	<section class="projecten-overzicht">
+		<h1>Projecten</h1>
+		{% set projecten = craft.entries().section('projecten').orderBy('postDate desc').all() %}
+		{% if projecten|length %}
+			<ul class="projecten-grid">
+				{% for p in projecten %}
+					<li class="project-card">
+						{% set logo = p.projectLogo.one() %}
+						{% if logo %}
+							<img class="project-card__logo" src="{{ logo.url }}" alt="Logo {{ p.title }}">
+						{% endif %}
+						<h2 class="project-card__title">{{ p.title }}</h2>
+						{% if p.projectKorteUitleg %}
+							<p class="project-card__uitleg">{{ p.projectKorteUitleg }}</p>
+						{% endif %}
+						<a class="project-card__cta" href="{{ p.url }}">Bekijk project</a>
+					</li>
+				{% endfor %}
+			</ul>
+		{% else %}
+			<p>Geen projecten gevonden.</p>
+		{% endif %}
+	</section>
+{% endblock %}

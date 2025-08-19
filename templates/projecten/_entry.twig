@@ -1,0 +1,23 @@
+{% extends "base/base.twig" %}
+
+{% block pageStyles %}
+	<link rel="stylesheet" href="{{ url('assets/css/pages/projecten.css') }}">
+{% endblock %}
+
+{% block content %}
+	<article class="project-detail">
+		{% set logo = entry.projectLogo.one() %}
+		{% if logo %}
+			<img class="project-detail__logo" src="{{ logo.url }}" alt="Logo {{ entry.title }}">
+		{% endif %}
+		<h1 class="project-detail__title">{{ entry.title }}</h1>
+		{% if entry.projectKorteUitleg %}
+			<p class="project-detail__intro">{{ entry.projectKorteUitleg }}</p>
+		{% endif %}
+		{% if entry.projectVolledigeUitleg %}
+			<div class="project-detail__body">{{ entry.projectVolledigeUitleg }}</div>
+		{% elseif entry.projectUitleg %}
+			<div class="project-detail__body">{{ entry.projectUitleg }}</div>
+		{% endif %}
+	</article>
+{% endblock %}

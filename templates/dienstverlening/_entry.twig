@@ -11,14 +11,37 @@
 			<img class="dienst-detail__img" src="{{ img.url }}" alt="{{ entry.title }}">
 		{% endif %}
 		<h1 class="dienst-detail__title">{{ entry.title }}</h1>
+
 		{% if entry.korteUitlegDiensten %}
 			<p class="dienst-detail__uitleg">{{ entry.korteUitlegDiensten }}</p>
 		{% endif %}
+
+		{# Openingsuren (meerregelig, netjes met nl2br) #}
+		{% if entry.openingsurenDienst %}
+			<div class="dienst-detail__openingsuren">
+				<h2>Openingsuren</h2>
+				<p>{{ entry.openingsurenDienst|nl2br }}</p>
+			</div>
+		{% endif %}
+
+		{# Acties: prijslijst (PDF) en externe link #}
 		{% set pdf = entry.prijslijstDienst is defined and entry.prijslijstDienst ? entry.prijslijstDienst.one() : null %}
-		{% if pdf %}
-			<p class="dienst-detail__pdf">
-				<a href="{{ pdf.url }}" target="_blank" rel="noopener" class="dienst-card__cta">Bekijk of download prijslijst (PDF)</a>
+		{% set extEntry = entry.ExterneLinkDienst is defined and entry.ExterneLinkDienst ? entry.ExterneLinkDienst.one() : null %}
+		{% set extUrl = extEntry ? extEntry.url : null %}
+		{% if pdf or extUrl %}
+			<p class="dienst-detail__actions">
+				{% if pdf %}
+					<a href="{{ pdf.url }}" target="_blank" rel="noopener" class="dienst-card__cta">Prijslijst (PDF)</a>
+				{% endif %}
+				{% if extUrl %}
+					<a href="{{ extUrl }}" target="_blank" rel="noopener" class="dienst-card__cta dienst-card__cta--secondary">Meer info</a>
+				{% endif %}
 			</p>
+		{% endif %}
+
+		{# Volledige uitleg #}
+		{% if entry.volledigeUitlegDienst %}
+			<div class="dienst-detail__volledig">{{ entry.volledigeUitlegDienst }}</div>
 		{% endif %}
 	</section>
 {% endblock %}

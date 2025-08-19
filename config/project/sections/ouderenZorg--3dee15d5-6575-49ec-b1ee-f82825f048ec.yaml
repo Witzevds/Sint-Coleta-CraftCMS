@@ -2,7 +2,7 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 34833753-e669-4115-b7c0-a267585cb788 # Soorten Zorg
+    uid: 34833753-e669-4115-b7c0-a267585cb788
 handle: ouderenZorg
 maxAuthors: null
 name: 'Ouderen Zorg'
