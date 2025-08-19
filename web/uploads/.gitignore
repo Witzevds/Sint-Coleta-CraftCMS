@@ -1,0 +1,12 @@
+# Zorg dat alle geuploade assets (projectLogos, werknemers, pricelist, hero, favicons, logos) worden meegepusht
+# Crop-mappen en thumbs mogen genegeerd worden
+
+!projectLogos/
+!werknemers/
+!pricelist/
+!hero/
+!favicons/
+!logos/
+
+# Negeer alle auto-crop en thumb folders
+_*x*_crop_center-center_none/
