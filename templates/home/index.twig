@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="{{ url('assets/css/pages/home.css') }}">
 {% endblock %}
 
-{% block content %}
+{% block content %}ddev
 
 	{% if entry.heroHomeTitle %}
 		{% set heroAsset = entry.heroHomeAfbeelding.one() %}
@@ -19,47 +19,11 @@
 			</div>
 		</div>
 	{% endif %}
-	{# Dienstverlening overzicht #}
-	<section class="home-section home-diensten">
-		<h2>Dienstverlening</h2>
-		{% set dienstverlening = craft.entries().section('dienstverlening').limit(6).all() %}
-		{% if dienstverlening|length %}
-			<ul class="home-grid">
-				{% for dienst in dienstverlening %}
-					<li class="home-card">
-						<h3 class="home-card__title">{{ dienst.title }}</h3>
-						{% if dienst.korteUitlegDiensten %}
-							<p class="home-card__text">{{ dienst.korteUitlegDiensten }}</p>
-						{% endif %}
-						<a class="btn" href="{{ dienst.getUrl() }}">Meer informatie</a>
-					</li>
-				{% endfor %}
-			</ul>
-		{% endif %}
-	</section>
 
-	{# Vacatures overzicht #}
-	<section class="home-section home-vacatures">
-		<h2>Vacatures</h2>
-		{% set vacatures = craft.entries().section('vacatures').orderBy('postDate desc').limit(3).all() %}
-		{% if vacatures|length %}
-			<ul class="home-grid">
-				{% for v in vacatures %}
-					<li class="home-card">
-						<h3 class="home-card__title">{{ v.title }}</h3>
-						{% if v.korteBeschrijvingVacature %}
-							<p class="home-card__text">{{ v.korteBeschrijvingVacature }}</p>
-						{% endif %}
-						<a class="btn" href="{{ v.getUrl() }}">Bekijk vacature</a>
-					</li>
-				{% endfor %}
-			</ul>
-		{% else %}
-			<p>Momenteel geen vacatures.</p>
-		{% endif %}
-		<p class="home-section__more">
-			<a class="btn btn--secondary" href="{{ url('vacatures') }}">Alle vacatures</a>
-		</p>
+	{# Eenvoudige snelkoppelingen onder de hero #}
+	<section class="home-quicklinks">
+		<a class="btn" href="{{ url('visie') }}">Visie</a>
+		<a class="btn btn--secondary" href="{{ url('opdrachtsverklaring') }}">Opdrachtsverklaring</a>
 	</section>
 
 {% endblock %}
