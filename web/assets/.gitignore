@@ -1,0 +1,5 @@
+# Zorg dat alle assets (css, fonts, icons, images) worden meegepusht
+!css/
+!fonts/
+!icons/
+!images/
