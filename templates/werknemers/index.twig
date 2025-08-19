@@ -73,6 +73,14 @@
 							{% if m.eMailadres %}
 								<a href="mailto:{{ m.eMailadres }}">E-mail</a>
 							{% endif %}
+							{% if m.telefoonnummer %}
+								{# verwijder spaties, / en - voor de tel: link #}
+								{% set telHref = 'tel:' ~ (m.telefoonnummer|replace({' ': '', '/': '', '-': ''})) %}
+								{% if m.eMailadres %}&nbsp;|&nbsp;
+								{% endif %}
+								<a href="{{ telHref }}">Tel:
+									{{ m.telefoonnummer }}</a>
+							{% endif %}
 						</p>
 					</li>
 				{% endfor %}
