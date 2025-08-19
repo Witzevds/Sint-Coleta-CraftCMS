@@ -19,6 +19,9 @@
 		<link rel="stylesheet" href="{{ url('assets/css/fonts.css') }}">
 		<link rel="stylesheet" href="{{ url('assets/css/reset.css') }}">
 
+		{# Optional per-page styles #}
+		{% block pageStyles %}{% endblock %}
+
 	</head>
 	<body>
 		{% include 'partials/_header.twig' %}

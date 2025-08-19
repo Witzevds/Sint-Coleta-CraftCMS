@@ -52,14 +52,12 @@
 		{% if medewerkers|length %}
 			<ul class="werknemers-grid">
 				{% for m in medewerkers %}
-					<li
-						class="werknemer-card">
-						{# Foto met fallback #}
+					<li class="werknemer-card">
 						{% set foto = m.profielfoto.one() %}
 						{% if foto %}
 							<img class="werknemer-card__foto" src="{{ foto.url }}" alt="{{ m.title }}">
 						{% else %}
-							<img class="werknemer-card__foto" src="{{ url('assets/images/default-profile.png') }}" alt="{{ m.title }}">
+							<img class="werknemer-card__foto" src="{{ url('assets/images/default-profile.svg') }}" alt="{{ m.title }}">
 						{% endif %}
 
 						<h3 class="werknemer-card__naam">{{ m.title }}</h3>
@@ -92,9 +90,11 @@ if (! form)
 return;
 
 
+
 form.addEventListener('change', (e) => {
 if (e.target.matches('input[type="checkbox"]')) 
 form.submit();
+
 
 
 });

@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="{{ url('assets/css/pages/home.css') }}">
 {% endblock %}
 
-{% block content %}ddev
+{% block content %}
 
 	{% if entry.heroHomeTitle %}
 		{% set heroAsset = entry.heroHomeAfbeelding.one() %}
@@ -19,11 +19,5 @@
 			</div>
 		</div>
 	{% endif %}
-
-	{# Eenvoudige snelkoppelingen onder de hero #}
-	<section class="home-quicklinks">
-		<a class="btn" href="{{ url('visie') }}">Visie</a>
-		<a class="btn btn--secondary" href="{{ url('opdrachtsverklaring') }}">Opdrachtsverklaring</a>
-	</section>
 
 {% endblock %}
